@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mega Mission Media — Branding, Media & Back Office for Small Business | Fort Worth, TX</title>
+<meta name="description" content="Mega Mission Media builds the whole house — branding, websites, video, podcasting and back-office support for small business owners. Built in Fort Worth. Your Vision. Our Mission.">
+<meta property="og:title" content="Mega Mission Media — Your Vision. Our Mission.">
+<meta property="og:description" content="Branding, websites, video, and the back-office support that keeps it all standing.">
+<meta property="og:type" content="website">
+
+<link rel="preload" href="fonts/archivo-black-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/dm-sans-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+
+<!-- ============================================================
+     GOOGLE ANALYTICS  —  replace G-XXXXXXXXXX with your real GA4 ID
+     ============================================================ -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
+<style>
+/* ============================================================
+   MEGA MISSION MEDIA — v2
+   Palette : bone / ink / gold / signal red / teal
+   Type    : Archivo Black (display) · DM Sans (body) · Archivo (utility)
+   Signature device : the broadcast lower-third
+   ============================================================ */
+
+/* self-hosted fonts — no third-party request, no flash of unstyled text */
+@font-face{font-family:'Archivo Black';src:url('fonts/archivo-black-latin-400-normal.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'DM Sans';src:url('fonts/dm-sans-latin-400-normal.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'DM Sans';src:url('fonts/dm-sans-latin-500-normal.woff2') format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:'DM Sans';src:url('fonts/dm-sans-latin-700-normal.woff2') format('woff2');font-weight:700;font-display:swap}
+@font-face{font-family:'Archivo';src:url('fonts/archivo-latin-600-normal.woff2') format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:'Archivo';src:url('fonts/archivo-latin-700-normal.woff2') format('woff2');font-weight:700;font-display:swap}
+
+:root{
+  --bone:#FAF7F2;
+  --bone-2:#F2EDE4;
+  --ink:#14100E;
+  --ink-soft:#2A2320;
+  --gold:#F0B429;
+  --gold-deep:#C98F14;
+  --red:#C8102E;
+  --teal:#0D9488;
+  --stone:#6B6259;
+  --line:#E2D9CB;
+
+  --display:'Archivo Black','Arial Black',system-ui,sans-serif;
+  --body:'DM Sans',system-ui,sans-serif;
+  --util:'Archivo',system-ui,sans-serif;
+
+  --pad:clamp(1.25rem,5vw,4.5rem);
+  --block:clamp(4.5rem,9vw,8rem);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:88px;-webkit-text-size-adjust:100%}
+body{
+  background:var(--bone);color:var(--ink-soft);
+  font-family:var(--body);font-size:clamp(1rem,.55vw + .88rem,1.0625rem);
+  line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px;border-radius:2px}
+
+.wrap{width:min(1240px,100% - var(--pad)*2);margin-inline:auto}
+.block{padding-block:var(--block)}
+
+/* ---------- type ---------- */
+h1,h2,h3{font-family:var(--display);font-weight:400;color:var(--ink);line-height:.94;letter-spacing:-.02em}
+h1{font-size:clamp(2.35rem,4.9vw,4.15rem)}
+h2{font-size:clamp(2rem,4.4vw,3.5rem)}
+h3{font-size:clamp(1.15rem,1.5vw,1.4rem);line-height:1.15}
+.gold{color:var(--gold-deep)}
+.red{color:var(--red)}
+
+/* ---------- SIGNATURE: broadcast lower-third ---------- */
+.lower-third{
+  display:inline-flex;align-items:center;gap:.7rem;
+  background:var(--ink);color:#fff;
+  font-family:var(--util);font-weight:700;font-size:.7rem;
+  letter-spacing:.19em;text-transform:uppercase;
+  padding:.55rem 1.1rem .55rem .95rem;
+  border-left:5px solid var(--gold);
+  clip-path:polygon(0 0,100% 0,calc(100% - 11px) 100%,0 100%);
+  padding-right:1.7rem;
+}
+.lower-third::before{
+  content:"";width:7px;height:7px;border-radius:50%;
+  background:var(--red);flex:none;
+}
+.lt-light{background:#fff;color:var(--ink)}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  font-family:var(--util);font-weight:700;font-size:.82rem;
+  letter-spacing:.11em;text-transform:uppercase;text-decoration:none;
+  padding:1.05rem 2rem;border:2px solid var(--ink);
+  transition:transform .18s ease,background .18s ease,color .18s ease,box-shadow .18s ease;
+  cursor:pointer;
+}
+.btn-gold{background:var(--gold);color:var(--ink);box-shadow:5px 5px 0 var(--ink)}
+.btn-gold:hover{transform:translate(-2px,-2px);box-shadow:7px 7px 0 var(--ink)}
+.btn-ghost{background:transparent;color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--bone)}
+.btn-sm{padding:.72rem 1.3rem;font-size:.72rem}
+.on-dark .btn-ghost{border-color:var(--bone);color:var(--bone)}
+.on-dark .btn-ghost:hover{background:var(--bone);color:var(--ink)}
+
+/* ---------- header ---------- */
+.hdr{
+  position:sticky;top:0;z-index:60;background:rgba(250,247,242,.94);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line);
+}
+.hdr-in{display:flex;align-items:center;gap:2rem;height:80px}
+.logo{font-family:var(--display);font-size:.92rem;line-height:1;letter-spacing:-.01em;text-decoration:none;flex:none}
+.logo span{display:block;color:var(--gold-deep);font-size:.58rem;font-family:var(--util);font-weight:700;letter-spacing:.2em;margin-top:.34rem;color:var(--stone)}
+.nav{display:flex;gap:2.1rem;margin-left:auto}
+.nav a{
+  font-family:var(--util);font-weight:600;font-size:.76rem;letter-spacing:.15em;
+  text-transform:uppercase;text-decoration:none;color:var(--stone);
+  padding-block:.4rem;position:relative;
+}
+.nav a::after{
+  content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--gold);
+  transition:width .22s ease;
+}
+.nav a:hover{color:var(--ink)}
+.nav a:hover::after,.nav a.on::after{width:100%}
+.nav a.on{color:var(--ink)}
+.hdr .btn{margin-left:.5rem}
+.burger{display:none;margin-left:auto;background:none;border:0;padding:.6rem;cursor:pointer}
+.burger span{display:block;width:26px;height:2.5px;background:var(--ink);margin:5px 0;transition:.25s}
+.burger.x span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.burger.x span:nth-child(2){opacity:0}
+.burger.x span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+
+@media(max-width:900px){
+  .nav{
+    position:fixed;inset:80px 0 auto;background:var(--bone);flex-direction:column;
+    gap:0;padding:1rem var(--pad) 2rem;border-bottom:1px solid var(--line);
+    transform:translateY(-130%);transition:transform .3s ease;margin:0;
+  }
+  .nav.open{transform:translateY(0)}
+  .nav a{padding:1rem 0;border-bottom:1px solid var(--line);font-size:.95rem}
+  .hdr .btn{display:none}
+  .burger{display:block}
+}
+
+/* ---------- B01 hero ---------- */
+.hero{position:relative;padding-block:clamp(2rem,4vw,3.4rem) 0;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(1rem,3vw,2.5rem);align-items:end}
+.hero-copy{padding-bottom:clamp(2.5rem,5vw,4rem)}
+.hero h1{margin:1.4rem 0 0}
+.hero h1 em{font-style:normal;color:var(--red)}
+.hero-sub{
+  font-size:clamp(1.02rem,.5vw + .92rem,1.2rem);color:var(--stone);
+  max-width:34ch;margin-top:1.5rem;
+}
+.proof{
+  list-style:none;margin-top:2rem;padding-top:1.5rem;border-top:2px solid var(--line);
+  font-family:var(--util);font-weight:600;font-size:.755rem;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--stone);
+}
+.proof li{position:relative;padding:.3rem 0 .3rem 1.4rem;line-height:1.5}
+.proof li::before{
+  content:"";position:absolute;left:0;top:.72rem;width:7px;height:7px;
+  background:var(--gold);transform:rotate(45deg);
+}
+.proof b{color:var(--ink);font-weight:700}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.85rem;margin-top:2.2rem}
+.hero-photo{position:relative;align-self:end;display:flex;justify-content:flex-end}
+.hero-photo picture{display:block;position:relative;z-index:2}
+.hero-photo img{
+  height:clamp(360px,50vh,540px);width:auto;max-width:100%;
+  position:relative;z-index:2;filter:drop-shadow(0 24px 40px rgba(20,16,14,.18));
+}
+.hero-glow{
+  position:absolute;z-index:1;right:0;bottom:0;
+  width:min(560px,105%);aspect-ratio:1;border-radius:50%;
+  background:radial-gradient(circle,rgba(240,180,41,.52) 0%,rgba(240,180,41,.17) 44%,transparent 70%);
+}
+.hero-plate{position:absolute;z-index:3;left:0;bottom:0}
+.hero-plate .lower-third{font-size:.72rem;padding-block:.7rem}
+
+@media(max-width:880px){
+  .hero-grid{grid-template-columns:1fr;gap:0}
+  .hero-copy{padding-bottom:2.5rem;text-align:left}
+  .hero-photo{max-width:min(420px,78%);margin-inline:auto}
+  .hero-sub,.proof{max-width:none}
+  .hero-plate{left:50%;transform:translateX(-50%);white-space:nowrap}
+  .hero-cta{display:grid;grid-template-columns:1fr;gap:.75rem;max-width:320px}
+}
+
+/* ---------- ticker ---------- */
+.ticker{
+  background:var(--ink);border-block:3px solid var(--gold);
+  overflow:hidden;padding-block:1.05rem;
+}
+.ticker-track{display:flex;width:max-content;animation:slide 34s linear infinite}
+.ticker:hover .ticker-track{animation-play-state:paused}
+.tick{
+  display:inline-flex;align-items:center;gap:1.5rem;padding-right:1.5rem;
+  font-family:var(--display);font-size:clamp(1.05rem,2vw,1.55rem);
+  color:var(--bone);letter-spacing:.005em;white-space:nowrap;
+}
+.tick i{
+  width:9px;height:9px;background:var(--gold);flex:none;
+  transform:rotate(45deg);display:inline-block;
+}
+.tick .em{color:var(--gold)}
+@keyframes slide{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ---------- B03 logo strip ---------- */
+.strip{background:var(--bone-2);border-bottom:1px solid var(--line);padding-block:2.1rem;overflow:hidden}
+.strip-track{display:flex;width:max-content;animation:slide 40s linear infinite;align-items:center}
+.strip:hover .strip-track{animation-play-state:paused}
+.chip{
+  flex:none;margin-right:1rem;background:#fff;border:1px solid var(--line);
+  padding:1.05rem 1.9rem;text-align:center;min-width:230px;
+}
+.chip b{
+  display:block;font-family:var(--display);font-size:.98rem;color:var(--ink);
+  letter-spacing:-.015em;
+}
+.chip span{
+  display:block;font-family:var(--util);font-weight:600;font-size:.6rem;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--stone);margin-top:.4rem;
+}
+
+/* ---------- section heads ---------- */
+.head{max-width:56ch;margin-bottom:clamp(2.4rem,4vw,3.4rem)}
+.head h2{margin-top:1.1rem}
+.head p{color:var(--stone);margin-top:1.1rem;font-size:1.06rem}
+.head-center{margin-inline:auto;text-align:center}
+
+/* ---------- B04 services ---------- */
+.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
+.card{
+  background:#fff;border:2px solid var(--ink);padding:2.1rem 1.8rem 2rem;
+  display:flex;flex-direction:column;position:relative;
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.card:hover{transform:translateY(-5px);box-shadow:9px 9px 0 var(--gold)}
+.card .num{
+  font-family:var(--util);font-weight:700;font-size:.68rem;letter-spacing:.2em;
+  color:var(--gold-deep);text-transform:uppercase;
+}
+.card h3{margin:.9rem 0 .85rem}
+.card > p{color:var(--stone);font-size:.97rem}
+.card ul{list-style:none;margin-top:1.4rem;padding-top:1.3rem;border-top:1px solid var(--line)}
+.card li{
+  font-size:.9rem;padding:.42rem 0 .42rem 1.35rem;position:relative;color:var(--ink-soft);
+}
+.card li::before{
+  content:"";position:absolute;left:0;top:.92rem;width:6px;height:6px;
+  background:var(--red);transform:rotate(45deg);
+}
+@media(max-width:860px){.svc{grid-template-columns:1fr}}
+
+/* ---------- B05 process (dark) ---------- */
+.dark{background:var(--ink);color:#CFC7BE}
+.dark h2,.dark h3{color:#fff}
+.dark .head p{color:#A9A099}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-top:1rem}
+.step{border-top:3px solid #3A322D;padding-top:1.5rem;position:relative}
+.step::before{
+  content:"";position:absolute;top:-3px;left:0;width:0;height:3px;background:var(--gold);
+  transition:width .7s cubic-bezier(.2,.7,.3,1);
+}
+.step.lit::before{width:100%}
+.step .n{
+  font-family:var(--util);font-weight:700;font-size:.68rem;letter-spacing:.2em;
+  color:var(--gold);text-transform:uppercase;
+}
+.step h3{font-size:1.22rem;margin:.75rem 0 .7rem}
+.step p{font-size:.93rem;color:#A9A099}
+@media(max-width:900px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+
+/* ---------- carousels ---------- */
+.rail{
+  display:flex;gap:1.4rem;overflow-x:auto;scroll-snap-type:x mandatory;
+  scrollbar-width:none;padding-bottom:.5rem;
+}
+.rail::-webkit-scrollbar{display:none}
+.rail > *{scroll-snap-align:center;flex:none}
+.ctrls{display:flex;align-items:center;gap:.9rem;margin-top:2rem;justify-content:center}
+.arrow{
+  width:46px;height:46px;border:2px solid var(--ink);background:transparent;
+  cursor:pointer;display:grid;place-items:center;transition:.18s;flex:none;
+}
+.arrow:hover{background:var(--ink);color:var(--bone)}
+.arrow svg{width:17px;height:17px;stroke:currentColor;stroke-width:2.4;fill:none}
+.dots{display:flex;gap:.45rem}
+.dot{width:26px;height:4px;background:var(--line);border:0;cursor:pointer;padding:0;transition:.22s}
+.dot.on{background:var(--gold);width:40px}
+.on-dark .arrow{border-color:#4A423C;color:#CFC7BE}
+.on-dark .arrow:hover{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+.on-dark .dot{background:#3A322D}
+.on-dark .dot.on{background:var(--gold)}
+
+/* work cards */
+.work{width:min(880px,84vw);background:#fff;border:2px solid var(--ink)}
+.work-top{
+  padding:1.5rem 1.7rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap;
+  border-bottom:2px solid var(--ink);
+}
+.work-top h3{flex:1;min-width:0}
+.work-shot{
+  aspect-ratio:16/9;background:var(--bone-2);display:grid;place-items:center;
+  color:var(--stone);font-family:var(--util);font-weight:600;font-size:.72rem;
+  letter-spacing:.16em;text-transform:uppercase;text-align:center;padding:1rem;
+  border-bottom:2px solid var(--ink);
+}
+.work-shot img{width:100%;height:100%;object-fit:cover}
+.work-body{padding:1.5rem 1.7rem;display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}
+.work-body p{flex:1;min-width:220px;font-size:.95rem;color:var(--stone)}
+.tag{
+  font-family:var(--util);font-weight:700;font-size:.6rem;letter-spacing:.16em;
+  text-transform:uppercase;background:var(--bone-2);padding:.4rem .75rem;color:var(--stone);
+}
+
+/* testimonial cards */
+.quote{
+  width:min(400px,82vw);background:#fff;border:2px solid var(--ink);
+  padding:2rem 1.8rem 0;display:flex;flex-direction:column;
+}
+.quote .mark{font-family:var(--display);font-size:2.6rem;color:var(--gold);line-height:.6}
+.quote p{margin:1.1rem 0 1.6rem;font-size:1rem;color:var(--ink-soft);flex:1}
+.quote .plate{margin:0 -1.8rem;background:var(--ink);padding:1rem 1.8rem;border-left:5px solid var(--gold)}
+.quote .plate b{display:block;font-family:var(--display);font-size:.92rem;color:#fff}
+.quote .plate span{
+  display:block;font-family:var(--util);font-weight:600;font-size:.63rem;
+  letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-top:.3rem;
+}
+
+/* ---------- B09 founder ---------- */
+.founder{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.founder-img{position:relative;padding:0 .9rem .9rem 0}
+.founder-img img{width:100%;position:relative;z-index:2;border:2px solid var(--ink)}
+.founder-img::after{
+  content:"";position:absolute;right:0;bottom:0;width:70%;height:70%;
+  background:var(--gold);z-index:1;
+}
+.founder-copy p{margin-top:1.15rem;color:var(--stone)}
+.founder-copy p strong{color:var(--ink)}
+.sig{
+  margin-top:2rem;padding-top:1.5rem;border-top:2px solid var(--line);
+  font-family:var(--display);font-size:1.15rem;color:var(--ink);
+}
+.sig span{
+  display:block;font-family:var(--util);font-weight:600;font-size:.68rem;
+  letter-spacing:.17em;text-transform:uppercase;color:var(--stone);margin-top:.45rem;
+}
+.verse{
+  margin-top:1.8rem;border-left:4px solid var(--gold);padding:.3rem 0 .3rem 1.2rem;
+  font-size:.98rem;color:var(--stone);font-style:italic;
+}
+@media(max-width:860px){.founder{grid-template-columns:1fr}.founder-img{max-width:330px}}
+
+/* ---------- B10 video wall ---------- */
+.vids{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
+.vid{
+  position:relative;display:block;text-decoration:none;background:var(--ink);
+  border:2px solid var(--ink);overflow:hidden;
+}
+.vid img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:transform .4s ease,opacity .3s}
+.vid:hover img{transform:scale(1.05);opacity:.72}
+.vid .play{
+  position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;
+}
+.vid .play i{
+  width:56px;height:56px;background:var(--gold);display:grid;place-items:center;
+  clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);
+}
+.vid .play i::after{
+  content:"";border-left:15px solid var(--ink);border-block:9px solid transparent;
+  margin-left:4px;
+}
+.vid .cap{
+  padding:1rem 1.1rem;background:var(--ink);color:#fff;
+  font-family:var(--util);font-weight:600;font-size:.76rem;letter-spacing:.05em;
+}
+@media(max-width:860px){.vids{grid-template-columns:1fr}}
+
+/* ---------- B11 CTA + form ---------- */
+.cta-band{
+  background:var(--gold);border-block:3px solid var(--ink);
+  padding-block:clamp(2.6rem,5vw,3.6rem);
+}
+.cta-in{display:flex;align-items:center;gap:2rem;flex-wrap:wrap;justify-content:space-between}
+.cta-in h2{max-width:22ch;font-size:clamp(1.75rem,3.4vw,2.7rem)}
+.cta-in .btns{display:flex;gap:.85rem;flex-wrap:wrap}
+.cta-band .btn-gold{background:var(--ink);color:var(--gold);box-shadow:5px 5px 0 rgba(20,16,14,.28)}
+
+.form-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,4.5rem);align-items:start}
+.form-aside dl{margin-top:2rem}
+.form-aside dt{
+  font-family:var(--util);font-weight:700;font-size:.66rem;letter-spacing:.18em;
+  text-transform:uppercase;color:var(--gold-deep);margin-top:1.5rem;
+}
+.form-aside dd{font-size:1.02rem;margin-top:.35rem}
+.form-aside dd a{text-decoration:none;border-bottom:2px solid var(--line);padding-bottom:2px}
+.form-aside dd a:hover{border-color:var(--gold)}
+form{background:#fff;border:2px solid var(--ink);padding:clamp(1.6rem,3vw,2.4rem)}
+.f-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+label{
+  display:block;font-family:var(--util);font-weight:700;font-size:.66rem;
+  letter-spacing:.15em;text-transform:uppercase;color:var(--stone);
+  margin:1.15rem 0 .45rem;
+}
+.f-row label:first-child,form > label:first-of-type{margin-top:0}
+input,select,textarea{
+  width:100%;font-family:var(--body);font-size:1rem;color:var(--ink);
+  background:var(--bone);border:2px solid var(--line);padding:.85rem .95rem;
+  transition:border-color .18s;
+}
+input:focus,select:focus,textarea:focus{border-color:var(--ink);outline:none}
+textarea{min-height:120px;resize:vertical}
+form .btn{width:100%;margin-top:1.7rem}
+.form-note{font-size:.82rem;color:var(--stone);margin-top:1rem;text-align:center}
+@media(max-width:860px){.form-grid,.f-row{grid-template-columns:1fr}}
+
+/* ---------- footer ---------- */
+.ftr{background:var(--ink);color:#A9A099;padding-block:clamp(3.4rem,6vw,5rem) 0}
+.ftr-grid{display:grid;grid-template-columns:1.5fr 1fr 1.2fr 1fr;gap:2.5rem}
+.ftr h4{
+  font-family:var(--util);font-weight:700;font-size:.68rem;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--gold);margin-bottom:1.2rem;
+}
+.ftr .logo{color:#fff;font-size:1.05rem;display:inline-block}
+.ftr .logo span{color:var(--teal)}
+.ftr-tag{margin-top:1rem;font-size:.94rem;max-width:30ch}
+.ftr ul{list-style:none}
+.ftr li{margin-bottom:.6rem}
+.ftr a{text-decoration:none;font-size:.94rem;transition:color .16s}
+.ftr a:hover{color:var(--gold)}
+.socials{display:flex;gap:.6rem;flex-wrap:wrap}
+.socials a{
+  width:40px;height:40px;border:1.5px solid #3A322D;display:grid;place-items:center;
+}
+.socials a:hover{border-color:var(--gold);background:var(--gold);color:var(--ink)}
+.socials svg{width:17px;height:17px;fill:currentColor}
+.ftr-bar{
+  margin-top:clamp(2.5rem,5vw,3.5rem);border-top:1px solid #2A2320;
+  padding-block:1.6rem;display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+  font-size:.8rem;
+}
+.ftr-bar .teal{color:var(--teal)}
+@media(max-width:900px){.ftr-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:540px){.ftr-grid{grid-template-columns:1fr}}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.3,1)}
+.rv.in{opacity:1;transform:none}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .ticker-track,.strip-track{animation:none}
+  .strip-track{flex-wrap:wrap;width:auto;justify-content:center;gap:1rem}
+  .rv{opacity:1;transform:none;transition:none}
+  .step::before{transition:none}
+  *{transition-duration:.01ms !important}
+}
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════ HDR ══════════════════════════ -->
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a href="#home" class="logo">MEGA MISSION MEDIA<span>Fort Worth, Texas</span></a>
+    <nav class="nav" id="nav">
+      <a href="#home" class="on">Home</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-gold btn-sm" data-book href="#contact">Book a Call</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ══════════════════════════ B01 · HERO ══════════════════════════ -->
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="lower-third">Faith · Business · Impact</span>
+      <h1>We Build the Whole House. Not Just the <em>Front Door.</em></h1>
+      <p class="hero-sub">Branding, websites, video, and the back-office support that keeps it all standing. One team. One mission.</p>
+      <ul class="proof">
+        <li><b>25+ years</b> turning strategy into delivery</li>
+        <li><b>A decade</b> in television and radio</li>
+        <li>Built in a car. Born in obedience.</li>
+      </ul>
+      <div class="hero-cta">
+        <a class="btn btn-gold" data-book href="#contact">Book a Call</a>
+        <a class="btn btn-ghost" href="#contact">Free Assessment</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="hero-glow"></div>
+      <picture>
+        <source srcset="assets/susy-hero.webp" type="image/webp">
+        <img src="assets/susy-hero.png" alt="Susy Gordon, Founder and CEO of Mega Mission Media" width="900" height="1094" fetchpriority="high">
+      </picture>
+      <div class="hero-plate"><span class="lower-third">Susy Gordon · Founder &amp; CEO</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ B02 · TICKER ══════════════════════════ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="tick">Your Vision. <span class="em">Our Mission.</span><i></i></span>
+    <span class="tick">Your Vision. <span class="em">Our Mission.</span><i></i></span>
+    <span class="tick">Your Vision. <span class="em">Our Mission.</span><i></i></span>
+    <span class="tick">Your Vision. <span class="em">Our Mission.</span><i></i></span>
+    <span class="tick">Your Vision. <span class="em">Our Mission.</span><i></i></span>
+    <span class="tick">Your Vision. <span class="em">Our Mission.</span><i></i></span>
+    <span class="tick">Your Vision. <span class="em">Our Mission.</span><i></i></span>
+    <span class="tick">Your Vision. <span class="em">Our Mission.</span><i></i></span>
+  </div>
+</div>
+
+<!-- ══════════════════════════ B03 · CLIENT STRIP ══════════════════════════ -->
+<div class="strip">
+  <div class="strip-track">
+    <div class="chip"><b>Call Yoel Now</b><span>Attorney at Law</span></div>
+    <div class="chip"><b>Cowtown Tour Company</b><span>Fort Worth Tours</span></div>
+    <div class="chip"><b>MLK Pre Arrangements</b><span>Pre-Need Planning</span></div>
+    <div class="chip"><b>4Tec Electric</b><span>Electrical Services</span></div>
+    <div class="chip"><b>FBI Network</b><span>Faith · Business · Impact</span></div>
+    <div class="chip"><b>Call Yoel Now</b><span>Attorney at Law</span></div>
+    <div class="chip"><b>Cowtown Tour Company</b><span>Fort Worth Tours</span></div>
+    <div class="chip"><b>MLK Pre Arrangements</b><span>Pre-Need Planning</span></div>
+    <div class="chip"><b>4Tec Electric</b><span>Electrical Services</span></div>
+    <div class="chip"><b>FBI Network</b><span>Faith · Business · Impact</span></div>
+  </div>
+</div>
+
+<!-- ══════════════════════════ B04 · SERVICES ══════════════════════════ -->
+<section class="block" id="services">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="lower-third">What We Do</span>
+      <h2>Three ways we build with you.</h2>
+      <p>Most owners get handed a template and nothing else. No brand, no voice, no support after launch. We start earlier and stay longer.</p>
+    </div>
+
+    <div class="svc">
+      <article class="card rv">
+        <span class="num">Start Here</span>
+        <h3>Build the Brand</h3>
+        <p>Before anything gets built, we figure out who you are, who you serve, and how you sound. Everything else hangs off this.</p>
+        <ul>
+          <li>Brand identity and positioning</li>
+          <li>Logo and visual direction</li>
+          <li>Messaging and voice</li>
+          <li>Print and business collateral</li>
+        </ul>
+      </article>
+
+      <article class="card rv">
+        <span class="num">The Work</span>
+        <h3>Build the House</h3>
+        <p>Your digital house — every room your customers walk through. Built to look like you, not like everyone else in your industry.</p>
+        <ul>
+          <li>Websites and landing pages</li>
+          <li>Video production, in person or AI</li>
+          <li>Podcasting and audio</li>
+          <li>Custom jingles and sonic branding</li>
+          <li><strong>Ride &amp; Share</strong> interview features</li>
+        </ul>
+      </article>
+
+      <article class="card rv">
+        <span class="num">Keep It Standing</span>
+        <h3>Run the House</h3>
+        <p>The part nobody sells you. Systems, follow-up, and the operational backbone that turns a nice website into a working business.</p>
+        <ul>
+          <li>Back-office and operations support</li>
+          <li>CRM and workflow setup</li>
+          <li>Scheduling and intake systems</li>
+          <li>Email marketing and invoicing</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ B05 · HOW WE WORK ══════════════════════════ -->
+<section class="block dark on-dark">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="lower-third">The Roadmap</span>
+      <h2>How we work.</h2>
+      <p>No mystery, no long contracts before you know what you're getting. Four steps, in order, every time.</p>
+    </div>
+    <div class="steps">
+      <div class="step rv">
+        <span class="n">Step One</span>
+        <h3>Assess</h3>
+        <p>A free look at your digital house — what's built, what's missing, what's costing you. You leave with a clear picture whether or not we work together.</p>
+      </div>
+      <div class="step rv">
+        <span class="n">Step Two</span>
+        <h3>Define</h3>
+        <p>We settle the brand before we build anything. Who you serve, what makes you different, and how you want to sound saying it.</p>
+      </div>
+      <div class="step rv">
+        <span class="n">Step Three</span>
+        <h3>Build</h3>
+        <p>Design first, for your approval. Then the build. You see it in stages and you tell us what to change — nothing ships you haven't signed off on.</p>
+      </div>
+      <div class="step rv">
+        <span class="n">Step Four</span>
+        <h3>Run</h3>
+        <p>Launch is the start, not the finish. We stay on for the operations, the updates, and the follow-up that keeps the whole thing working.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ B06 · TICKER ══════════════════════════ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="tick">Your Vision. <span class="em">Our Mission.</span><i></i></span>
+    <span class="tick">Your Vision. <span class="em">Our Mission.</span><i></i></span>
+    <span class="tick">Your Vision. <span class="em">Our Mission.</span><i></i></span>
+    <span class="tick">Your Vision. <span class="em">Our Mission.</span><i></i></span>
+    <span class="tick">Your Vision. <span class="em">Our Mission.</span><i></i></span>
+    <span class="tick">Your Vision. <span class="em">Our Mission.</span><i></i></span>
+    <span class="tick">Your Vision. <span class="em">Our Mission.</span><i></i></span>
+    <span class="tick">Your Vision. <span class="em">Our Mission.</span><i></i></span>
+  </div>
+</div>
+
+<!-- ══════════════════════════ B07 · WORK CAROUSEL ══════════════════════════ -->
+<section class="block" id="work">
+  <div class="wrap">
+    <div class="head head-center rv">
+      <span class="lower-third">Selected Work</span>
+      <h2>Built for people we know by name.</h2>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="rail" id="workRail">
+
+      <article class="work">
+        <div class="work-top">
+          <h3>Call Yoel Now</h3>
+          <span class="tag">Attorney</span>
+        </div>
+        <!-- REPLACE: screenshot of callyoelnow.com → assets/work-yoel.jpg -->
+        <div class="work-shot">Add screenshot · assets/work-yoel.jpg</div>
+        <div class="work-body">
+          <p>A practice built on being reachable. The site says exactly that, in one line, above everything else.</p>
+          <a class="btn btn-ghost btn-sm" href="https://callyoelnow.com" target="_blank" rel="noopener">Visit Website</a>
+        </div>
+      </article>
+
+      <article class="work">
+        <div class="work-top">
+          <h3>Cowtown Tour Company</h3>
+          <span class="tag">Tourism</span>
+        </div>
+        <!-- REPLACE: screenshot → assets/work-cowtown.jpg -->
+        <div class="work-shot">Add screenshot · assets/work-cowtown.jpg</div>
+        <div class="work-body">
+          <p>Fort Worth history, told by someone who lives it. Built to get visitors from curious to booked.</p>
+          <a class="btn btn-ghost btn-sm" data-href-todo href="#contact">Visit Website</a>
+        </div>
+      </article>
+
+      <article class="work">
+        <div class="work-top">
+          <h3>4Tec Electric</h3>
+          <span class="tag">Trade Services</span>
+        </div>
+        <!-- REPLACE: screenshot → assets/work-4tec.jpg -->
+        <div class="work-shot">Add screenshot · assets/work-4tec.jpg</div>
+        <div class="work-body">
+          <p>Licensed electrical work presented the way it deserves — clear, credible, and easy to call.</p>
+          <a class="btn btn-ghost btn-sm" data-href-todo href="#contact">Visit Website</a>
+        </div>
+      </article>
+
+      <article class="work">
+        <div class="work-top">
+          <h3>MLK Pre Arrangements</h3>
+          <span class="tag">Coming Soon</span>
+        </div>
+        <div class="work-shot">Coming Soon · Built by Mega Mission Media</div>
+        <div class="work-body">
+          <p>Pre-need planning handled with the care the subject asks for. In build now.</p>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="ctrls">
+      <button class="arrow" data-rail="workRail" data-dir="-1" aria-label="Previous">
+        <svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>
+      </button>
+      <div class="dots" data-dots="workRail"></div>
+      <button class="arrow" data-rail="workRail" data-dir="1" aria-label="Next">
+        <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ B08 · TESTIMONIALS ══════════════════════════ -->
+<section class="block dark on-dark">
+  <div class="wrap">
+    <div class="head head-center rv">
+      <span class="lower-third">In Their Words</span>
+      <h2>Hear it from the people we build for.</h2>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="rail" id="quoteRail">
+      <!-- ⚠ PLACEHOLDER QUOTES — replace every one with real, approved wording -->
+      <article class="quote">
+        <span class="mark">“</span>
+        <p>[Replace with Yoel's own words. Ask him for two or three sentences on what changed after launch — and get his written OK to publish it.]</p>
+        <div class="plate"><b>Yoel Zehaie</b><span>Call Yoel Now</span></div>
+      </article>
+      <article class="quote">
+        <span class="mark">“</span>
+        <p>[Replace with Carrie's own words. Ask what she'd tell another owner who's on the fence — and get her written OK to publish it.]</p>
+        <div class="plate"><b>Carrie Carter</b><span>Cowtown Tour Company</span></div>
+      </article>
+      <article class="quote">
+        <span class="mark">“</span>
+        <p>[Replace with Thomas's own words. Ask about the process, not just the result — and get his written OK to publish it.]</p>
+        <div class="plate"><b>Thomas Delgado</b><span>4Tec Electric</span></div>
+      </article>
+      <article class="quote">
+        <span class="mark">“</span>
+        <p>[Replace with Lena's own words — and get her written OK to publish it.]</p>
+        <div class="plate"><b>Lena Killion</b><span>MLK Pre Arrangements</span></div>
+      </article>
+    </div>
+
+    <div class="ctrls">
+      <button class="arrow" data-rail="quoteRail" data-dir="-1" aria-label="Previous">
+        <svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg>
+      </button>
+      <div class="dots" data-dots="quoteRail"></div>
+      <button class="arrow" data-rail="quoteRail" data-dir="1" aria-label="Next">
+        <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ B09 · FOUNDER ══════════════════════════ -->
+<section class="block">
+  <div class="wrap founder">
+    <div class="founder-img rv">
+      <picture>
+        <source srcset="assets/susy-desk.webp" type="image/webp">
+        <img src="assets/susy-desk.jpg" alt="Susy Gordon at her desk" width="1000" height="795" loading="lazy">
+      </picture>
+    </div>
+    <div class="founder-copy rv">
+      <span class="lower-third">Who You're Hiring</span>
+      <h2>Hi, I'm Susy.</h2>
+      <p>I spent twenty-five years inside corporate technology — business analyst, project manager, scrum master, agile coach, and eventually Director of Strategy and Delivery. My job was taking a plan nobody could execute and turning it into something that actually shipped.</p>
+      <p>Before that, I was in broadcast. Master control for television and radio — <strong>Univision, CBS 11, Radio Intelligence.</strong> I know what a story sounds like when it's cut right, and I know what it costs a business when nobody hears it.</p>
+      <p>In June 2025 I left the corporate world to do this full time. The first interviews were recorded from the front seat of my Kia Sportage, because that's what I had. <strong>Built in a car. Born in obedience.</strong></p>
+      <p>Now I bring all of it — the strategy, the delivery, the broadcast, the marketing — to owners who were handed a template and told that was enough. It isn't.</p>
+      <blockquote class="verse">"Being confident of this, that he who began a good work in you will carry it on to completion." — Philippians 1:6</blockquote>
+      <div class="sig">Susy Gordon<span>Founder &amp; CEO · Mega Mission Media</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ B10 · RIDE & SHARE ══════════════════════════ -->
+<section class="block" style="background:var(--bone-2);border-block:1px solid var(--line)">
+  <div class="wrap">
+    <div class="head head-center rv">
+      <span class="lower-third">Ride &amp; Share</span>
+      <h2>The interview that happens in the car.</h2>
+      <p>Owners talk differently when they're in the passenger seat and nobody's holding a clipboard. That's the whole idea.</p>
+    </div>
+
+    <!-- REPLACE each VIDEO_ID with a real YouTube ID from the Susy Gordon 89 channel -->
+    <div class="vids">
+      <a class="vid rv" href="https://www.youtube.com/watch?v=VIDEO_ID_1" target="_blank" rel="noopener">
+        <img src="https://img.youtube.com/vi/VIDEO_ID_1/hqdefault.jpg" alt="Ride &amp; Share episode" loading="lazy">
+        <span class="play"><i></i></span>
+        <span class="cap">Ride &amp; Share · Episode title</span>
+      </a>
+      <a class="vid rv" href="https://www.youtube.com/watch?v=VIDEO_ID_2" target="_blank" rel="noopener">
+        <img src="https://img.youtube.com/vi/VIDEO_ID_2/hqdefault.jpg" alt="Ride &amp; Share episode" loading="lazy">
+        <span class="play"><i></i></span>
+        <span class="cap">Ride &amp; Share · Episode title</span>
+      </a>
+      <a class="vid rv" href="https://www.youtube.com/watch?v=VIDEO_ID_3" target="_blank" rel="noopener">
+        <img src="https://img.youtube.com/vi/VIDEO_ID_3/hqdefault.jpg" alt="Ride &amp; Share episode" loading="lazy">
+        <span class="play"><i></i></span>
+        <span class="cap">Ride &amp; Share · Episode title</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════ B11 · TICKER + CTA + CONTACT ══════════════════════════ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span class="tick">Your Vision. <span class="em">Our Mission.</span><i></i></span>
+    <span class="tick">Your Vision. <span class="em">Our Mission.</span><i></i></span>
+    <span class="tick">Your Vision. <span class="em">Our Mission.</span><i></i></span>
+    <span class="tick">Your Vision. <span class="em">Our Mission.</span><i></i></span>
+    <span class="tick">Your Vision. <span class="em">Our Mission.</span><i></i></span>
+    <span class="tick">Your Vision. <span class="em">Our Mission.</span><i></i></span>
+    <span class="tick">Your Vision. <span class="em">Our Mission.</span><i></i></span>
+    <span class="tick">Your Vision. <span class="em">Our Mission.</span><i></i></span>
+  </div>
+</div>
+
+<div class="cta-band">
+  <div class="wrap cta-in">
+    <h2>Ready to see what's actually missing?</h2>
+    <div class="btns">
+      <a class="btn btn-gold" data-book href="#contact">Book a Call</a>
+      <a class="btn btn-ghost" href="#contact">Free Assessment</a>
+    </div>
+  </div>
+</div>
+
+<section class="block" id="contact">
+  <div class="wrap form-grid">
+    <div class="form-aside rv">
+      <span class="lower-third">Get In Touch</span>
+      <h2>Let's talk.</h2>
+      <p style="color:var(--stone);margin-top:1.1rem">Thirty minutes, no pitch, no pressure. Book straight into my calendar, or send a note and I'll come back to you.</p>
+      <dl>
+        <dt>Phone</dt>
+        <dd><a href="tel:+18178608989">817-860-8989</a></dd>
+        <dt>Email</dt>
+        <dd><a href="mailto:susy@megamissionmedia.com">susy@megamissionmedia.com</a></dd>
+        <dt>Based In</dt>
+        <dd>Fort Worth, Texas</dd>
+        <dt>Community</dt>
+        <dd><a href="https://fbinetwork.com" target="_blank" rel="noopener">FBI Network — Mondays, 9AM CST</a></dd>
+      </dl>
+      <a class="btn btn-gold" data-book href="#contact" style="margin-top:2rem">Book a Call</a>
+    </div>
+
+    <form id="contactForm" method="POST" class="rv">
+      <div class="f-row">
+        <div>
+          <label for="fname">First Name</label>
+          <input id="fname" name="first_name" type="text" required autocomplete="given-name">
+        </div>
+        <div>
+          <label for="lname">Last Name</label>
+          <input id="lname" name="last_name" type="text" required autocomplete="family-name">
+        </div>
+      </div>
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required autocomplete="email">
+
+      <label for="phone">Phone <span style="text-transform:none;letter-spacing:0">(optional)</span></label>
+      <input id="phone" name="phone" type="tel" autocomplete="tel">
+
+      <label for="biz">Business Name</label>
+      <input id="biz" name="business" type="text">
+
+      <label for="need">What do you need most right now?</label>
+      <select id="need" name="need">
+        <option>I'm not sure yet — let's talk</option>
+        <option>Branding and identity</option>
+        <option>A website</option>
+        <option>Video, podcast, or audio</option>
+        <option>Back office and operations</option>
+        <option>All of it</option>
+      </select>
+
+      <label for="msg">Tell me about your business</label>
+      <textarea id="msg" name="message"></textarea>
+
+      <button class="btn btn-gold" type="submit">Send Message</button>
+      <p class="form-note">I read every one of these myself.</p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════════════════════ FTR ══════════════════════════ -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div>
+        <a href="#home" class="logo">MEGA MISSION MEDIA<span>Your Vision. Our Mission.</span></a>
+        <p class="ftr-tag">Branding, media, and back-office support for small business owners. Built in Fort Worth.</p>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://fbinetwork.com" target="_blank" rel="noopener">FBI Network</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+18178608989">817-860-8989</a></li>
+          <li><a href="mailto:susy@megamissionmedia.com">susy@megamissionmedia.com</a></li>
+          <li>Fort Worth, Texas</li>
+          <li><a data-book href="#contact">Book a Call</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <!-- REPLACE the # hrefs with your real profile URLs -->
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.9c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.9.1s-3.6 0-4.9-.1c-3.2-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9C2.4 3.9 4 2.4 7.1 2.3 8.4 2.2 8.8 2.2 12 2.2zm0 4.9a4.9 4.9 0 100 9.8 4.9 4.9 0 000-9.8zm0 8.1a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zm5.1-8.3a1.15 1.15 0 100-2.3 1.15 1.15 0 000 2.3z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M6.9 8.5H3.7V21h3.2V8.5zM5.3 3a1.9 1.9 0 100 3.8 1.9 1.9 0 000-3.8zM21 14.1c0-3.4-1.8-5-4.2-5-2 0-2.8 1.1-3.3 1.8V8.5H10.3V21h3.2v-6.9c0-1.4.7-2.3 1.9-2.3 1.1 0 1.7.8 1.7 2.3V21H21v-6.9z"/></svg></a>
+          <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M22 12s0-3.3-.4-4.8c-.2-.9-.9-1.5-1.7-1.7C18.3 5 12 5 12 5s-6.3 0-7.9.5c-.8.2-1.5.8-1.7 1.7C2 8.7 2 12 2 12s0 3.3.4 4.8c.2.9.9 1.5 1.7 1.7 1.6.5 7.9.5 7.9.5s6.3 0 7.9-.5c.8-.2 1.5-.8 1.7-1.7.4-1.5.4-4.8.4-4.8zM10 15.2V8.8l5.3 3.2-5.3 3.2z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ftr-bar">
+      <span>© <span id="yr">2026</span> Mega Mission Media. All rights reserved.</span>
+      <span>Built in a car. Born in obedience. <span class="teal">Fort Worth, TX.</span></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   CONFIG — the only two lines you should ever need to change
+   ============================================================ */
+const SITE = {
+  bookingUrl  : "https://calendar.app.google/7EeEp5VeZZvSwdrE6",
+  formEndpoint: "https://formspree.io/f/xgawvlvb"
+};
+
+/* apply config */
+document.querySelectorAll('[data-book]').forEach(function(el){
+  if (SITE.bookingUrl.indexOf('REPLACE') === -1){
+    el.href = SITE.bookingUrl;
+    el.target = '_blank';
+    el.rel = 'noopener';
+  }
+});
+document.getElementById('contactForm').action = SITE.formEndpoint;
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+/* mobile nav */
+var burger = document.getElementById('burger'), nav = document.getElementById('nav');
+burger.addEventListener('click', function(){
+  var open = nav.classList.toggle('open');
+  burger.classList.toggle('x', open);
+  burger.setAttribute('aria-expanded', open);
+});
+nav.addEventListener('click', function(e){
+  if (e.target.tagName === 'A'){ nav.classList.remove('open'); burger.classList.remove('x'); }
+});
+
+/* scroll reveal + process bars */
+var io = new IntersectionObserver(function(entries){
+  entries.forEach(function(en){
+    if (!en.isIntersecting) return;
+    en.target.classList.add('in');
+    if (en.target.classList.contains('step')){
+      var sibs = Array.prototype.slice.call(en.target.parentNode.children);
+      setTimeout(function(){ en.target.classList.add('lit'); }, sibs.indexOf(en.target) * 160);
+    }
+    io.unobserve(en.target);
+  });
+}, { threshold: .18, rootMargin: '0px 0px -40px' });
+document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+
+/* carousels */
+document.querySelectorAll('.rail').forEach(function(rail){
+  var items = Array.prototype.slice.call(rail.children);
+  var dotBox = document.querySelector('[data-dots="' + rail.id + '"]');
+
+  items.forEach(function(_, i){
+    var b = document.createElement('button');
+    b.className = 'dot' + (i === 0 ? ' on' : '');
+    b.setAttribute('aria-label', 'Go to item ' + (i + 1));
+    b.addEventListener('click', function(){ go(i); });
+    dotBox.appendChild(b);
+  });
+
+  function go(i){
+    i = Math.max(0, Math.min(items.length - 1, i));
+    var target = items[i];
+    rail.scrollTo({
+      left: target.offsetLeft - (rail.clientWidth - target.clientWidth) / 2,
+      behavior: 'smooth'
+    });
+  }
+  function current(){
+    var mid = rail.scrollLeft + rail.clientWidth / 2, best = 0, dist = Infinity;
+    items.forEach(function(it, i){
+      var c = it.offsetLeft + it.clientWidth / 2, d = Math.abs(c - mid);
+      if (d < dist){ dist = d; best = i; }
+    });
+    return best;
+  }
+  function paint(){
+    var c = current();
+    Array.prototype.slice.call(dotBox.children).forEach(function(d, i){
+      d.classList.toggle('on', i === c);
+    });
+  }
+
+  var t;
+  rail.addEventListener('scroll', function(){ clearTimeout(t); t = setTimeout(paint, 90); }, { passive: true });
+
+  document.querySelectorAll('[data-rail="' + rail.id + '"]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      go(current() + parseInt(btn.dataset.dir, 10));
+    });
+  });
+
+  go(0);
+});
+
+/* nav active state */
+var sections = ['home','services','work','contact'];
+var spy = new IntersectionObserver(function(entries){
+  entries.forEach(function(en){
+    if (!en.isIntersecting) return;
+    document.querySelectorAll('.nav a').forEach(function(a){
+      a.classList.toggle('on', a.getAttribute('href') === '#' + en.target.id);
+    });
+  });
+}, { rootMargin: '-45% 0px -50%' });
+sections.forEach(function(id){
+  var el = document.getElementById(id);
+  if (el) spy.observe(el);
+});
+</script>
+</body>
+</html>
