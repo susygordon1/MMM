@@ -362,3 +362,26 @@ You mentioned **Paint Pros DFW** is a mockup that carries a real phone number
 for a real client. That number is live on your public site inside something
 labelled a concept build. Worth confirming they're fine with it, or swapping it
 for a placeholder.
+
+---
+
+# Round 10 — Portfolio images
+
+## Why they looked broken
+Seven of the thumbnails (`yoel-website-hero.png`, `4tec-website-hero.png`,
+`maverick-hero.png`, `lone-star-pole-hero.png`, `texas-southern-hero.png`,
+`paintpros-hero.png`, `waymaker-hero.png`) already live in your GitHub repo.
+They break when you open index.html locally because that folder doesn't have
+them. **They will appear as soon as you deploy. No action needed.**
+
+## The one real gap: 9-Line Financial
+There was never an image for it — it was rendering as a text tile. Built one
+from the tablet screenshot you sent: **`9lf-website-hero.png`** (800×600, 219KB).
+Now wired in.
+
+## Add to your repo
+`9lf-website-hero.png` goes in the same folder as index.html.
+
+## If you ever want to replace a thumbnail
+Send a screenshot and say which one. Capture the top of the homepage, browser
+chrome cropped off, roughly 4:3.
