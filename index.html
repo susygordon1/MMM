@@ -93,6 +93,62 @@
   }
   @media (max-width: 640px) { .intro-section { padding: 60px 6vw; } }
 
+
+  /* ===== BOXED DARK BLOCKS ON WHITE — white gutters act as dividers ===== */
+  .intro-section,
+  .case-section,
+  .mini-portfolio-section,
+  .story-section,
+  .reviews-section,
+  .cta-section {
+    background: var(--paper) !important;
+    padding: 14px 4vw !important;
+    border: 0 !important;
+  }
+
+  .intro-inner,
+  .case-inner,
+  .mini-portfolio-inner,
+  .story-inner,
+  .reviews-inner,
+  .cta-inner {
+    background: var(--black) !important;
+    border-radius: 16px;
+    padding: clamp(46px, 5.5vw, 86px) clamp(26px, 4vw, 68px) !important;
+    max-width: 1360px !important;
+    margin-inline: auto !important;
+    box-shadow: 0 2px 26px rgba(0,0,0,.10);
+  }
+
+  /* story is a grid — keep the columns, just box it */
+  .story-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(2rem, 4vw, 4rem);
+    align-items: center;
+  }
+  @media (max-width: 900px) { .story-inner { grid-template-columns: 1fr; } }
+
+  /* CTA band needs an inner wrapper to box */
+  .cta-section { text-align: center; }
+  .cta-inner { text-align: center; }
+
+  @media (max-width: 640px) {
+    .intro-section, .case-section, .mini-portfolio-section,
+    .story-section, .reviews-section, .cta-section { padding: 10px 3vw !important; }
+    .intro-inner, .case-inner, .mini-portfolio-inner,
+    .story-inner, .reviews-inner, .cta-inner { border-radius: 12px; }
+  }
+
+
+  /* body ground matches the gutters so no black seams show through */
+  body { background: var(--paper) !important; }
+  .hero { background: var(--black) !important; }
+  /* light sections sit flush with the gutters — drop their divider lines */
+  .videos-section.light, .roadmap-section.light { border-top: 0 !important; border-bottom: 0 !important; }
+  /* footer stays full-bleed dark */
+  .footer-simple { background: var(--black) !important; }
+
 </style>
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -2600,12 +2656,14 @@
 </section>
 
 <section class="cta-section">
+ <div class="cta-inner">
   <h2>READY TO PUT YOUR<br>BUSINESS OUT THERE?</h2>
   <p>Full-service. Faith-driven. Fort Worth, Texas.</p>
   <div class="cta-buttons">
     <a class="cta-btn cta-btn-primary" href="https://calendar.app.google/7EeEp5VeZZvSwdrE6" target="_blank" rel="noopener">Book a Call</a>
     <a class="cta-btn cta-btn-ghost" href="#" data-open-modal>Free Assessment</a>
   </div>
+ </div>
 </section>
 
 <section class="contact-section light" id="contact">
