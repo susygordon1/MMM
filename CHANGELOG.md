@@ -112,3 +112,34 @@ Active nav item underlines in deep teal.
 All `favicon-*.png`, `favicon.ico`, `mmm-logo-tile-simple.png`,
 `mmm-mark-simple.png` go in the **same folder as index.html**.
 `MMM_Logo.png` is no longer referenced — safe to delete.
+
+---
+
+# Round 3 — Hero, phone number, nav
+
+## Phone number: 817-860-8989 everywhere
+Nav, footer, contact note, form error messages. Matches your Google Business
+Profile, which is what Google cross-references.
+
+**Keep 682 as your cold-dialing number and never publish it.** Cold calling
+burns a number — enough unanswered calls to strangers and carriers start
+flagging it "Spam Likely." You do not want that happening to the number on
+your Business Profile. Say the 817 out loud on calls, and forward 682 → 817.
+
+## Hero
+- Device mockup: **laptop = 4TEC website, tablet = 4TEC campaign graphic,
+  phone = 9-LF mobile.** Real screenshots, no AI-generated fake interfaces.
+- **Book a Call** (solid) and **Get in Touch** (outline) sit under the headline
+- Caption changed: "Faith-Based Media Network" → "Branding · Websites · Video ·
+  Back Office" — says what you sell
+
+## Nav
+- Socials moved to the **right** of the black top strip; phone number removed
+- Single **Book a Call** button in the white bar
+
+## Files to add
+`hero-devices.png` and `hero-devices.webp` go alongside index.html.
+
+## To swap a device screen later
+The mockup is a flat image. Send new screenshots and I'll rebuild it — the
+tablet is the obvious slot for Yoel's site or Tony's desktop view.
