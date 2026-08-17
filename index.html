@@ -149,6 +149,24 @@
   /* footer stays full-bleed dark */
   .footer-simple { background: var(--black) !important; }
 
+
+  /* facts strip — boxed dark, matching the other blocks */
+  .facts-section { background: var(--paper) !important; padding: 14px 4vw !important; }
+  .facts-strip {
+    background: var(--black) !important;
+    border-radius: 16px;
+    border-bottom: 0 !important;
+    padding: clamp(40px, 4.5vw, 62px) clamp(26px, 4vw, 68px) !important;
+    max-width: 1360px !important;
+    margin-inline: auto !important;
+    box-shadow: 0 2px 26px rgba(0,0,0,.10);
+    justify-content: space-between;
+  }
+  @media (max-width: 640px) {
+    .facts-section { padding: 10px 3vw !important; }
+    .facts-strip { border-radius: 12px; gap: 26px; }
+  }
+
 </style>
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -2312,6 +2330,7 @@
 <div class="ticker-wrap">
   <div class="ticker-track"><span>Your Vision. Our Mission.</span><img class="ticker-mark" src="mmm-mark-ink.png" alt=""><span>Branding</span><img class="ticker-mark" src="mmm-mark-ink.png" alt=""><span>Marketing &amp; Advertising</span><img class="ticker-mark" src="mmm-mark-ink.png" alt=""><span>Production</span><img class="ticker-mark" src="mmm-mark-ink.png" alt=""><span>Social Media</span><img class="ticker-mark" src="mmm-mark-ink.png" alt=""><span>Brand Coaching</span><img class="ticker-mark" src="mmm-mark-ink.png" alt=""><span>Fort Worth, Texas</span><img class="ticker-mark" src="mmm-mark-ink.png" alt=""><span>Your Vision. Our Mission.</span><img class="ticker-mark" src="mmm-mark-ink.png" alt=""><span>Branding</span><img class="ticker-mark" src="mmm-mark-ink.png" alt=""><span>Marketing &amp; Advertising</span><img class="ticker-mark" src="mmm-mark-ink.png" alt=""><span>Production</span><img class="ticker-mark" src="mmm-mark-ink.png" alt=""><span>Social Media</span><img class="ticker-mark" src="mmm-mark-ink.png" alt=""><span>Brand Coaching</span><img class="ticker-mark" src="mmm-mark-ink.png" alt=""><span>Fort Worth, Texas</span><img class="ticker-mark" src="mmm-mark-ink.png" alt=""></div>
 </div>
+<section class="facts-section">
 <div class="facts-strip">
   <div class="fact-item">
     <p class="fact-value">Founder &amp; CEO</p>
@@ -2319,14 +2338,16 @@
   </div>
   <div class="fact-item">
     <p class="fact-value">25+ Years</p>
-    <p class="fact-label">Corporate Strategy &amp; Digital Media</p>
+    <p class="fact-label">Broadcast &amp; Corporate Strategy</p>
   </div>
   <div class="fact-item">
     <p class="fact-value">Fort Worth, TX</p>
-    <p class="fact-label">Faith-Based Media Network</p>
+    <p class="fact-label">Marketing · Advertising · Production</p>
   </div>
 </div>
 
+
+</section>
 
 <section class="intro-section">
   <div class="intro-inner">
