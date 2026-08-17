@@ -71,3 +71,44 @@ Social icons added (Facebook, Instagram, LinkedIn, YouTube), phone and email.
 - Click Book a Call, make a test booking, confirm it lands on your calendar,
   then delete it
 - Submit the Free Assessment modal once and confirm it reaches your inbox
+
+---
+
+# Round 2 — Logo, favicon, nav
+
+## New logo files
+| File | Use |
+|---|---|
+| `mmm-logo-tile-simple.png` | Nav bar (black tile, cyan mark) |
+| `mmm-mark-simple.png` | Transparent, no tile — for dark backgrounds |
+| `favicon.ico`, `favicon-16/32/48.png` | Browser tabs |
+| `favicon-180.png` | Apple touch icon |
+| `favicon-192/512.png` | Android |
+
+**Two versions of the mark exist on purpose.** The ChatGPT original has ~23 thin
+bars — beautiful at full size, unreadable at 48px, which is exactly the size it
+runs in your own nav. The simplified 7-bar version is what's wired in. Same
+idea, survives being small. Use the detailed one for large-format only.
+
+These are still raster. For print and true scaling, have Cheshire redraw as vector.
+
+## Nav rebuilt — three distinct actions
+- **Top strip (black):** social icons + **Call Us Directly** → phone
+- **Book a Call** (solid) → Google calendar
+- **Get in Touch** (outline) → Free Assessment form modal
+
+No more duplicate CTAs. Each button goes somewhere different.
+
+## Nav is now white
+Black top strip → white nav bar → cyan ticker → black hero.
+Active nav item underlines in deep teal.
+
+## Fixed
+- Gold nav button (the yellow that was bugging you) — gone
+- "ON AIR" dot and text were still orange — now teal
+- Favicon: there wasn't one at all before
+
+## Add to your repo
+All `favicon-*.png`, `favicon.ico`, `mmm-logo-tile-simple.png`,
+`mmm-mark-simple.png` go in the **same folder as index.html**.
+`MMM_Logo.png` is no longer referenced — safe to delete.
