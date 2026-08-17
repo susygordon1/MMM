@@ -1,15 +1,27 @@
-# Mega Mission Media — Deploy
+# Mega Mission Media — Final Deploy
 
-## What's in this zip
+## Upload these to your repo (flat, no subfolders)
 
-**Replace in your repo:**
+**HTML**
 - `index.html`
 
-**Add to your repo (same folder as index.html):**
-- `9lf-website-hero.png`
+**Portfolio thumbnails**
+- `yoel-hero-v2.png`
+- `9lf-hero-v2.png`
+- `4tec-hero-v2.png`
+- `maverick-hero-v2.png`
+- `lonestar-hero-v2.png`
+- `texassouthern-hero-v2.png`
+- `paintpros-hero-v2.png`
+- `waymaker-hero-v2.png`
+
+**Images**
 - `hero-devices.png`
 - `hero-devices.webp`
 - `susy-story.jpg`
+- `og-share.jpg`  ← link preview card
+
+**Logo + favicons**
 - `mmm-logo-tile-simple.png`
 - `mmm-mark-simple.png`
 - `mmm-mark-ink.png`
@@ -21,23 +33,20 @@
 - `favicon-192.png`
 - `favicon-512.png`
 
-**Already in your repo — leave them alone:**
-- `yoel-website-hero.png`
-- `4tec-website-hero.png`
-- `maverick-hero.png`
-- `lone-star-pole-hero.png`
-- `texas-southern-hero.png`
-- `paintpros-hero.png`
-- `waymaker-hero.png`
+---
 
-**Safe to delete:**
-- `MMM_Logo.png` — no longer referenced
+## DELETE from your repo — nothing references these
 
-Everything lives flat in one folder. No subfolders.
+`20260810_HERO_FINAL.png` · `9lf-website-hero.png` · `MMM_Logo.png` ·
+`archivo-black-latin-400-normal.woff2` · `archivo-latin-600-normal.woff2` ·
+`archivo-latin-700-normal.woff2` · `dm-sans-latin-400-normal.woff2` ·
+`dm-sans-latin-500-normal.woff2` · `dm-sans-latin-700-normal.woff2` ·
+`great-vibes-latin-400-normal.woff2` · `susy-desk.jpg` · `susy-desk.webp` ·
+`susy-hero.png` · `susy-hero.webp` · `texture-paper.jpg`
 
 ---
 
-## Live settings already wired
+## Live settings
 
 | | |
 |---|---|
@@ -46,47 +55,52 @@ Everything lives flat in one folder. No subfolders.
 | Booking | calendar.app.google/7EeEp5VeZZvSwdrE6 |
 | Forms | formspree.io/f/xgawvlvb |
 | Analytics | G-TD5J4DJ1WB |
+| Facebook | MMM business page |
+| YouTube | @MegaMissionMedia |
+| LinkedIn | company/113000943 |
+| Instagram | susygordon89 (still personal) |
 
 ---
 
 ## Page order
 
-1. Top strip — socials
-2. Nav (white) — Book a Call
-3. Hero — devices, Book a Call + Get in Touch
-4. Ticker
-5. Facts strip
-6. Roadmap — Foundation / Growth / Authority *(light)*
-7. Portfolio — Client Work + Concept Builds
+1. Hero — devices, Book a Call + Get in Touch
+2. Ticker
+3. Facts strip
+4. Intro — what Mega Mission Media is
+5. **Case Study — One Client. The Whole House.**
+6. Portfolio — Client Work + Concept Builds
+7. Ride & Share
 8. Meet The Owner
-9. Case Study — One Client. The Whole House.
-10. Ride & Share *(light)*
-11. Client reviews
-12. Booking card *(light)*
-13. CTA band
-14. Contact form *(light)*
-15. Footer
+9. What Our Clients Say
+10. Foundation / Growth / Authority
+11. Ready To Put Your Business Out There
+12. Send Us A Message
+13. Footer
 
 ---
 
 ## Test after deploy
 
-1. Open on your phone → check GA4 **Realtime** shows you as active
-2. Click **Book a Call** → make a test booking → confirm it hits your calendar → delete it
-3. Submit **Get in Touch** (modal) → confirm email arrives, subject "Free Assessment Request"
-4. Submit the bottom form → confirm email arrives, subject "Contact Form"
-5. Check the portfolio thumbnails all load
+1. **Link preview** — text yourself `megamissionmedia.com/?v=2`
+   (the `?v=2` beats iMessage's cache; without it you may still see the old flat text)
+2. **Analytics** — open on your phone, check GA4 Realtime for yourself
+3. **Booking** — book a test call, confirm it hits your calendar, delete it
+4. **Modal form** — submit once, look for subject "Free Assessment Request"
+5. **Bottom form** — submit once, look for subject "Contact Form"
 
-Forms will not work from a local file. Only test on the live domain.
+Forms only work on the live domain. They will fail from a local file.
 
 ---
 
 ## Still open
 
 - **info@megamissionmedia.com** — using susy@ for now
-- **Footer scripture** — the Matthew line, when you land on it
+- **Instagram** — only social still pointing at a personal handle
+- **Footer scripture** — the Matthew verse, when you land on it
 - **Carrie / Lena / Tony reviews** — commented out in the HTML, uncomment as they arrive
-- **New MMM YouTube IDs** — after you re-upload to the business channel
-- **YouTube Follow link** — currently the playlist, wants the channel URL
-- **Paint Pros DFW** — mockup carrying a real client's phone number, live on your site
-- **Logo** — still raster. Have Cheshire redraw as vector for print.
+- **MMM YouTube IDs** — swap after you re-upload to the business channel
+- **Maverick Cleanouts** — demo site showing 682-484-1335, your cold-call number
+- **Broadcast credential band** — scoped, not built
+- **Coaching** — now in your copy but not in any of the three phases
+- **Logo** — still raster; have Cheshire redraw as vector for print
