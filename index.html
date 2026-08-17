@@ -6,7 +6,75 @@
 <title>Mega Mission Media — Your Vision. Our Mission.</title>
   <style>
     @font-face{font-family:'Great Vibes';src:url('fonts/great-vibes-latin-400-normal.woff2') format('woff2');font-weight:400;font-display:swap}
-  </style>
+  
+  /* ===== PORTFOLIO GROUPS ===== */
+  .pf-group-label {
+    font-family: 'Orbitron', sans-serif; font-size: .78rem; letter-spacing: .2em;
+    text-transform: uppercase; color: var(--teal) !important;
+    margin: 46px 0 6px !important; padding-top: 26px;
+    border-top: 1px solid var(--border);
+  }
+  .mini-portfolio-inner > .pf-group-label:first-of-type { border-top: 0; padding-top: 0; margin-top: 34px !important; }
+  .pf-group-note { font-size: .85rem; color: var(--gray) !important; margin: 0 0 22px !important; }
+  .pf-tags { display: flex; flex-wrap: wrap; gap: 5px; padding: 0 14px 14px; }
+  .pf-tag {
+    font-family: 'Orbitron', sans-serif; font-size: .55rem; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--teal);
+    border: 1px solid rgba(34,224,224,.4); padding: 4px 7px; border-radius: 2px;
+  }
+  .mini-portfolio-card .mini-portfolio-name { margin-bottom: 8px !important; }
+
+  /* ===== CASE STUDY ===== */
+  .case-section { padding: 96px 6vw; background: var(--surface); border-block: 1px solid var(--border); }
+  .case-inner { max-width: 1240px; margin: 0 auto; }
+  .case-lead { color: var(--gray) !important; max-width: 62ch; margin: 0 0 40px !important; font-size: 1.02rem; }
+  .case-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
+  }
+  .case-card {
+    display: block; text-decoration: none; background: var(--black);
+    border: 1px solid var(--border); transition: transform .25s ease, border-color .25s ease;
+  }
+  .case-card:hover { transform: translateY(-4px); border-color: var(--teal); }
+  .case-thumb { position: relative; aspect-ratio: 16/9; overflow: hidden; background: #000; }
+  .case-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: opacity .25s; }
+  .case-card:hover .case-thumb img { opacity: .7; }
+  .case-play { position: absolute; inset: 0; display: grid; place-items: center; pointer-events: none; }
+  .case-play span {
+    width: 46px; height: 46px; border-radius: 50%; background: var(--teal);
+    display: grid; place-items: center; box-shadow: 0 0 0 7px rgba(34,224,224,.22);
+  }
+  .case-play span::after {
+    content: ''; border-left: 13px solid var(--black);
+    border-top: 8px solid transparent; border-bottom: 8px solid transparent; margin-left: 3px;
+  }
+  .case-name {
+    font-family: 'Orbitron', sans-serif; font-size: .82rem; color: var(--white) !important;
+    margin: 14px 14px 3px !important;
+  }
+  .case-role { font-size: .72rem; color: var(--gray) !important; margin: 0 14px 14px !important; }
+
+  .case-outcome {
+    margin-top: 34px; padding: 30px 32px; background: var(--black);
+    border-left: 4px solid var(--teal); border-top: 1px solid var(--border);
+    border-right: 1px solid var(--border); border-bottom: 1px solid var(--border);
+  }
+  .case-quote { color: var(--white) !important; font-size: 1.05rem; margin: 0 0 14px !important; max-width: 72ch; }
+  .case-attr {
+    font-family: 'Orbitron', sans-serif; font-size: .72rem; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--white) !important; margin: 0 0 16px !important;
+  }
+  .case-attr span { color: var(--teal); }
+  .case-link {
+    display: inline-block; text-decoration: none; color: var(--teal);
+    font-family: 'Orbitron', sans-serif; font-size: .74rem; letter-spacing: .1em;
+    text-transform: uppercase; border-bottom: 1px solid rgba(34,224,224,.4); padding-bottom: 3px;
+  }
+  .case-link:hover { color: var(--white); border-color: var(--white); }
+  @media (max-width: 640px) { .case-section { padding: 68px 6vw; } .case-outcome { padding: 24px 20px; } }
+
+</style>
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
@@ -2028,6 +2096,74 @@
   }
 
 
+
+  /* ===== PORTFOLIO GROUPS ===== */
+  .pf-group-label {
+    font-family: 'Orbitron', sans-serif; font-size: .78rem; letter-spacing: .2em;
+    text-transform: uppercase; color: var(--teal) !important;
+    margin: 46px 0 6px !important; padding-top: 26px;
+    border-top: 1px solid var(--border);
+  }
+  .mini-portfolio-inner > .pf-group-label:first-of-type { border-top: 0; padding-top: 0; margin-top: 34px !important; }
+  .pf-group-note { font-size: .85rem; color: var(--gray) !important; margin: 0 0 22px !important; }
+  .pf-tags { display: flex; flex-wrap: wrap; gap: 5px; padding: 0 14px 14px; }
+  .pf-tag {
+    font-family: 'Orbitron', sans-serif; font-size: .55rem; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--teal);
+    border: 1px solid rgba(34,224,224,.4); padding: 4px 7px; border-radius: 2px;
+  }
+  .mini-portfolio-card .mini-portfolio-name { margin-bottom: 8px !important; }
+
+  /* ===== CASE STUDY ===== */
+  .case-section { padding: 96px 6vw; background: var(--surface); border-block: 1px solid var(--border); }
+  .case-inner { max-width: 1240px; margin: 0 auto; }
+  .case-lead { color: var(--gray) !important; max-width: 62ch; margin: 0 0 40px !important; font-size: 1.02rem; }
+  .case-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
+  }
+  .case-card {
+    display: block; text-decoration: none; background: var(--black);
+    border: 1px solid var(--border); transition: transform .25s ease, border-color .25s ease;
+  }
+  .case-card:hover { transform: translateY(-4px); border-color: var(--teal); }
+  .case-thumb { position: relative; aspect-ratio: 16/9; overflow: hidden; background: #000; }
+  .case-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: opacity .25s; }
+  .case-card:hover .case-thumb img { opacity: .7; }
+  .case-play { position: absolute; inset: 0; display: grid; place-items: center; pointer-events: none; }
+  .case-play span {
+    width: 46px; height: 46px; border-radius: 50%; background: var(--teal);
+    display: grid; place-items: center; box-shadow: 0 0 0 7px rgba(34,224,224,.22);
+  }
+  .case-play span::after {
+    content: ''; border-left: 13px solid var(--black);
+    border-top: 8px solid transparent; border-bottom: 8px solid transparent; margin-left: 3px;
+  }
+  .case-name {
+    font-family: 'Orbitron', sans-serif; font-size: .82rem; color: var(--white) !important;
+    margin: 14px 14px 3px !important;
+  }
+  .case-role { font-size: .72rem; color: var(--gray) !important; margin: 0 14px 14px !important; }
+
+  .case-outcome {
+    margin-top: 34px; padding: 30px 32px; background: var(--black);
+    border-left: 4px solid var(--teal); border-top: 1px solid var(--border);
+    border-right: 1px solid var(--border); border-bottom: 1px solid var(--border);
+  }
+  .case-quote { color: var(--white) !important; font-size: 1.05rem; margin: 0 0 14px !important; max-width: 72ch; }
+  .case-attr {
+    font-family: 'Orbitron', sans-serif; font-size: .72rem; letter-spacing: .1em;
+    text-transform: uppercase; color: var(--white) !important; margin: 0 0 16px !important;
+  }
+  .case-attr span { color: var(--teal); }
+  .case-link {
+    display: inline-block; text-decoration: none; color: var(--teal);
+    font-family: 'Orbitron', sans-serif; font-size: .74rem; letter-spacing: .1em;
+    text-transform: uppercase; border-bottom: 1px solid rgba(34,224,224,.4); padding-bottom: 3px;
+  }
+  .case-link:hover { color: var(--white); border-color: var(--white); }
+  @media (max-width: 640px) { .case-section { padding: 68px 6vw; } .case-outcome { padding: 24px 20px; } }
+
 </style>
 </head>
 <body>
@@ -2190,58 +2326,53 @@
     <p class="block-eyebrow" style="color:var(--teal);">Mega Mission Media</p>
     <h2 class="block-title" style="margin-bottom:0;">Portfolio</h2>
 
+    <p class="pf-group-label">Client Work</p>
     <div class="mini-portfolio-grid">
-
-      <a href="https://www.4tecelectric.com/" target="_blank" rel="noopener" class="mini-portfolio-card">
-        <img class="mini-portfolio-thumb" src="4tec-website-hero.png" alt="4Tec Electric">
-        <p class="mini-portfolio-name">4Tec Electric</p>
-      </a>
-
-      <a href="https://www.9-lf.com" target="_blank" rel="noopener" class="mini-portfolio-card">
-        <div class="mini-portfolio-thumb placeholder">9-LINE FINANCIAL</div>
-        <p class="mini-portfolio-name">9-Line Financial</p>
-      </a>
-
       <a href="https://callyoelnow.com" target="_blank" rel="noopener" class="mini-portfolio-card">
         <img class="mini-portfolio-thumb" src="yoel-website-hero.png" alt="Call Yoel Now">
         <p class="mini-portfolio-name">Call Yoel Now</p>
+        <div class="pf-tags"><span class="pf-tag">Branding</span><span class="pf-tag">Website</span><span class="pf-tag">Ride &amp; Share</span><span class="pf-tag">Podcast</span><span class="pf-tag">AI Spots</span></div>
       </a>
+      <a href="https://www.9-lf.com" target="_blank" rel="noopener" class="mini-portfolio-card">
+        <div class="mini-portfolio-thumb placeholder">9-LINE FINANCIAL</div>
+        <p class="mini-portfolio-name">9-Line Financial</p>
+        <div class="pf-tags"><span class="pf-tag">Branding</span><span class="pf-tag">Website</span></div>
+      </a>
+      <a href="https://www.4tecelectric.com/" target="_blank" rel="noopener" class="mini-portfolio-card">
+        <img class="mini-portfolio-thumb" src="4tec-website-hero.png" alt="4Tec Electric">
+        <p class="mini-portfolio-name">4Tec Electric</p>
+        <div class="pf-tags"><span class="pf-tag">Branding</span><span class="pf-tag">Website</span></div>
+      </a>
+    </div>
 
+    <p class="pf-group-label">Concept Builds</p>
+    <p class="pf-group-note">Demonstration sites built to show what's possible — not client engagements.</p>
+    <div class="mini-portfolio-grid">
       <a href="https://maverickcleanouts.com" target="_blank" rel="noopener" class="mini-portfolio-card">
         <img class="mini-portfolio-thumb" src="maverick-hero.png" alt="Maverick Cleanouts">
         <p class="mini-portfolio-name">Maverick Cleanouts</p>
+        <div class="pf-tags"><span class="pf-tag">Branding</span><span class="pf-tag">Website</span></div>
       </a>
-
-      <a href="https://speaklifeministry.org" target="_blank" rel="noopener" class="mini-portfolio-card">
-        <div class="mini-portfolio-thumb placeholder">SPEAK LIFE MINISTRY</div>
-        <p class="mini-portfolio-name">Speak Life Ministry</p>
-      </a>
-
-      <a href="https://joyridesftw.com" target="_blank" rel="noopener" class="mini-portfolio-card">
-        <div class="mini-portfolio-thumb placeholder">JOYRIDE FTW</div>
-        <p class="mini-portfolio-name">Joyride FTW</p>
-      </a>
-
       <a href="https://lone-star-pole.vercel.app/" target="_blank" rel="noopener" class="mini-portfolio-card">
         <img class="mini-portfolio-thumb" src="lone-star-pole-hero.png" alt="Lone Star Pole Supply">
         <p class="mini-portfolio-name">Lone Star Pole Supply</p>
+        <div class="pf-tags"><span class="pf-tag">Website</span></div>
       </a>
-
       <a href="https://tscs-topaz.vercel.app/" target="_blank" rel="noopener" class="mini-portfolio-card">
         <img class="mini-portfolio-thumb" src="texas-southern-hero.png" alt="Texas Southern">
         <p class="mini-portfolio-name">Texas Southern</p>
+        <div class="pf-tags"><span class="pf-tag">Website</span></div>
       </a>
-
       <a href="https://ppdfw.vercel.app/" target="_blank" rel="noopener" class="mini-portfolio-card">
         <img class="mini-portfolio-thumb" src="paintpros-hero.png" alt="Paint Pros DFW">
         <p class="mini-portfolio-name">Paint Pros DFW</p>
+        <div class="pf-tags"><span class="pf-tag">Website</span></div>
       </a>
-
       <a href="https://waymaker-ten.vercel.app/" target="_blank" rel="noopener" class="mini-portfolio-card">
-        <img class="mini-portfolio-thumb" src="waymaker-hero.png" alt="Waymaker Utility Solutions" style="object-fit:contain; background:#0a0a0a;">
+        <img class="mini-portfolio-thumb" src="waymaker-hero.png" alt="Waymaker Utility Solutions">
         <p class="mini-portfolio-name">Waymaker Utility Solutions</p>
+        <div class="pf-tags"><span class="pf-tag">Website</span></div>
       </a>
-
     </div>
   </div>
 </section>
@@ -2266,6 +2397,59 @@
     <div class="story-visual">
       <img src="susy-story.jpg" alt="Susy Gordon, Founder and CEO of Mega Mission Media" loading="lazy">
       <p class="story-quote">"Being confident of this, that he who began a good work in you will carry it on to completion." &mdash; Philippians 1:6</p>
+    </div>
+  </div>
+</section>
+
+
+<section class="case-section">
+  <div class="case-inner">
+    <p class="block-eyebrow" style="color:var(--teal);">Case Study</p>
+    <h2 class="block-title" style="margin-bottom:14px;">One Client. The Whole House.</h2>
+    <p class="case-lead">Yoel Zehaie came to us for a website. He left with a brand, a film library, and commercials running in two languages. This is what the full build looks like.</p>
+
+    <div class="case-grid">
+      <a class="case-card" href="https://youtu.be/_tWQ5h-sYhw" target="_blank" rel="noopener">
+        <div class="case-thumb">
+          <img src="https://img.youtube.com/vi/_tWQ5h-sYhw/hqdefault.jpg" alt="On-site mini pod reel for Call Yoel Now" loading="lazy">
+          <span class="case-play"><span></span></span>
+        </div>
+        <p class="case-name">Mini Pod Reel</p>
+        <p class="case-role">On-location production</p>
+      </a>
+
+      <a class="case-card" href="https://youtu.be/8P6-LrKRfcw" target="_blank" rel="noopener">
+        <div class="case-thumb">
+          <img src="https://img.youtube.com/vi/8P6-LrKRfcw/hqdefault.jpg" alt="AI commercial spot in English for Call Yoel Now" loading="lazy">
+          <span class="case-play"><span></span></span>
+        </div>
+        <p class="case-name">AI Spot &mdash; English</p>
+        <p class="case-role">Commercial production</p>
+      </a>
+
+      <a class="case-card" href="https://youtu.be/HBcUyfrrTCY" target="_blank" rel="noopener">
+        <div class="case-thumb">
+          <img src="https://img.youtube.com/vi/HBcUyfrrTCY/hqdefault.jpg" alt="AI commercial spot in Spanish for Call Yoel Now" loading="lazy">
+          <span class="case-play"><span></span></span>
+        </div>
+        <p class="case-name">AI Spot &mdash; Espa&ntilde;ol</p>
+        <p class="case-role">Bilingual production</p>
+      </a>
+
+      <a class="case-card" href="https://youtu.be/iUCYARj7i9U" target="_blank" rel="noopener">
+        <div class="case-thumb">
+          <img src="https://img.youtube.com/vi/iUCYARj7i9U/hqdefault.jpg" alt="Ride and Share interview with Yoel Zehaie" loading="lazy">
+          <span class="case-play"><span></span></span>
+        </div>
+        <p class="case-name">Ride &amp; Share</p>
+        <p class="case-role">Founder interview</p>
+      </a>
+    </div>
+
+    <div class="case-outcome">
+      <p class="case-quote">"I have been a client with mega missions, and they are the best marketers I know!!! Since I signed with them my business profit has increased by 3 to 4 times."</p>
+      <p class="case-attr">Yoel Zehaie &nbsp;·&nbsp; <span>Call Yoel Now</span></p>
+      <a class="case-link" href="https://callyoelnow.com" target="_blank" rel="noopener">Visit callyoelnow.com &rarr;</a>
     </div>
   </div>
 </section>

@@ -317,3 +317,48 @@ Both are one-line edits if you'd rather have them back.
 ## Verified after revert
 Hero, ticker, portfolio, reviews, booking card, both forms, and the modal all
 work. No JS errors.
+
+---
+
+# Round 9 — Portfolio restructured + Yoel case study
+
+## Removed
+**Speak Life Ministry** and **Joyride FTW** — yours, going on another site.
+
+## Portfolio split into two labelled groups
+
+**Client Work (3)** — real engagements, with service tags on each card:
+| Client | Scope |
+|---|---|
+| Call Yoel Now | Branding · Website · Ride & Share · Podcast · AI Spots |
+| 9-Line Financial | Branding · Website |
+| 4Tec Electric | Branding · Website |
+
+**Concept Builds (5)** — Maverick Cleanouts, Lone Star Pole Supply, Texas
+Southern, Paint Pros DFW, Waymaker Utility Solutions. Labelled underneath:
+*"Demonstration sites built to show what's possible — not client engagements."*
+
+That one line is what lets you show eight builds without any of them being a
+claim you'd have to walk back on a call.
+
+## NEW — "One Client. The Whole House." case study
+Sits between the portfolio and the Ride & Share wall. Four videos:
+
+| Piece | Video |
+|---|---|
+| Mini Pod Reel | `_tWQ5h-sYhw` |
+| AI Spot — English | `8P6-LrKRfcw` |
+| AI Spot — Español | `HBcUyfrrTCY` |
+| Ride & Share | `iUCYARj7i9U` |
+
+Closes with Yoel's Google review and a link to callyoelnow.com.
+
+This is now the strongest thing on the page. One client, six pieces of proof,
+and an outcome in his own words — which is exactly what an insurance agent on
+a cold call is trying to picture.
+
+## One thing to check
+You mentioned **Paint Pros DFW** is a mockup that carries a real phone number
+for a real client. That number is live on your public site inside something
+labelled a concept build. Worth confirming they're fine with it, or swapping it
+for a placeholder.
