@@ -229,3 +229,34 @@ have caused trouble later. Closed properly now.
 
 ## New file
 `mmm-mark-ink.png` goes alongside index.html.
+
+---
+
+# Round 7 — Meet The Owner rebuilt
+
+Section went from dark to light and textured, laid out like the reference:
+photo left in a white mat frame, copy right, signature at the bottom.
+
+## What's new
+- **Paper texture background** (`texture-paper.jpg`) — subtle plaster grain,
+  3KB, generated not stock
+- **Watermark** — your waveform mark at 2.8% opacity behind the copy. Hidden on
+  mobile where it just crowded the text.
+- **Photo frame** — white mat with a thin teal inner rule, drop shadow
+- **Signature** — "Susy Gordon" in Great Vibes, self-hosted (`fonts/great-vibes-latin-400-normal.woff2`)
+- **Heading** — "MEET **THE OWNER**", two-tone, matching the reference
+- Broadcast credential tags kept: Univision · CBS 11 · Radio Intelligence ·
+  25+ Years Corporate
+
+## About that signature
+It's a script typeface rendering of your name, not a scan of your handwriting.
+Standard practice for a website sign-off. **Don't use it as an actual
+signature on anything legal** — for that you'd sign or use a real e-signature.
+
+## What I did NOT add
+The reference has a "TOP TIER BRANDS — GUARANTEED" seal in the corner. I left
+it off. Award badges you haven't been given are the kind of thing a prospect
+can check, and one that doesn't hold up costs more than the badge gains.
+
+## New files
+`texture-paper.jpg`, `fonts/great-vibes-latin-400-normal.woff2`
