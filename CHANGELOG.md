@@ -232,7 +232,17 @@ have caused trouble later. Closed properly now.
 
 ---
 
-# Round 7 — Meet The Owner rebuilt
+# Round 7 — Meet The Owner rebuilt, then REVERTED
+
+**Rolled back at Susy's request. The section is dark again.**
+Kept below for reference only — none of it is in the current build.
+
+## ORIGINAL ROUND 7 NOTES, then REVERTED
+
+**This round was rolled back at Susy's request. The section is dark again.**
+Kept below for reference only — none of it is in the current build.
+
+## ORIGINAL ROUND 7 NOTES
 
 Section went from dark to light and textured, laid out like the reference:
 photo left in a white mat frame, copy right, signature at the bottom.
@@ -260,3 +270,50 @@ can check, and one that doesn't hold up costs more than the badge gains.
 
 ## New files
 `texture-paper.jpg`, `fonts/great-vibes-latin-400-normal.woff2`
+
+
+---
+
+# Round 8 — Round 7 reverted
+
+Meet The Owner is back to the dark version: "I Came Up In Broadcast," copy
+left, photo right, teal credential tags, Philippians 1:6 under the photo.
+
+Removed entirely: the light textured background, watermark, white photo mat,
+and script signature. All the CSS for those is gone from the file.
+
+`texture-paper.jpg` and the Great Vibes font are no longer referenced. They're
+still in the zip in case you want to revisit — safe to delete otherwise.
+
+Verified after revert: hero, ticker, portfolio, reviews, booking, both forms,
+and the modal all still work. No JS errors.
+
+
+---
+
+# Round 8 — Reverted, heading changed
+
+## Section is dark again
+The light textured version is gone: no paper background, no watermark, no white
+photo mat, no script signature. All that CSS was removed from the file.
+
+`texture-paper.jpg` and the Great Vibes font are no longer referenced. Still in
+the zip if you ever want them — safe to delete otherwise.
+
+## Heading changed
+"I Came Up In Broadcast." → **"Meet The Owner"** (two-tone, teal on white)
+
+## Two small copy changes that came with it
+Changing the headline broke the copy underneath, so:
+
+- Eyebrow: "Before Mega Mission Media" → **"Founder & CEO · Fort Worth, TX"**
+  (the old one set up a headline that no longer exists)
+- First line now opens **"Hey, I'm Susy Gordon. I came up in broadcast —"**
+  The broadcast line was the payoff of the old headline. Without an intro it
+  started mid-thought.
+
+Both are one-line edits if you'd rather have them back.
+
+## Verified after revert
+Hero, ticker, portfolio, reviews, booking card, both forms, and the modal all
+work. No JS errors.
