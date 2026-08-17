@@ -168,3 +168,36 @@ closes up. Nothing runs edge-to-edge except the ticker, which should.
 ## To swap a device later
 Send a new screenshot and say which device. Laptop wants ~4:3 desktop,
 tablet ~4:3 narrower, phone from your actual phone.
+
+---
+
+# Round 5 — Form wiring confirmed
+
+## Both forms already point to Formspree xgawvlvb
+Verified: the Free Assessment modal and the Send Us A Message form both POST to
+`https://formspree.io/f/xgawvlvb`.
+
+**If the modal looked like it wasn't sending, that's because of local testing.**
+Formspree rejects submissions from a `file://` page — it only accepts them from
+the real domain. Test after deploy, not before.
+
+## Added: form labelling
+Every submission now carries a hidden `_subject` and `form_source` so you can
+tell at a glance which form someone used:
+
+| Form | Subject line in your inbox |
+|---|---|
+| Free Assessment modal | Free Assessment Request — megamissionmedia.com |
+| Contact section | Contact Form — megamissionmedia.com |
+
+This matters for the cold-call campaign — Free Assessment submissions are warm
+leads who clicked a specific offer.
+
+## Error messages now give a second route
+Was: "Something went wrong."
+Now: "That didn't send. Please call 817-860-8989 or email susy@megamissionmedia.com."
+
+## Test after deploy
+Submit both forms once on the live site. Confirm two emails arrive with
+different subject lines. Formspree may ask you to confirm the endpoint the
+first time.

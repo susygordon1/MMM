@@ -2395,6 +2395,8 @@
     <p class="category-sub" style="margin: 0 auto 32px; text-align:center;">Tell us about your business and what you need — we'll get back to you personally.</p>
 
     <form class="contact-form" id="mmmContactForm" action="https://formspree.io/f/xgawvlvb" method="POST">
+      <input type="hidden" name="_subject" value="Contact Form — megamissionmedia.com">
+      <input type="hidden" name="form_source" value="Contact section (bottom of page)">
       <div>
         <label for="cf-name">Name</label>
         <input type="text" id="cf-name" name="name" required>
@@ -2504,6 +2506,7 @@
     <p class="modal-sub">Tell us where you are. We'll come back to you personally &mdash; no pitch, no pressure.</p>
     <form id="assessForm" action="https://formspree.io/f/xgawvlvb" method="POST">
       <input type="hidden" name="_subject" value="Free Assessment Request — megamissionmedia.com">
+      <input type="hidden" name="form_source" value="Free Assessment modal">
       <label for="am-name">Name</label>
       <input type="text" id="am-name" name="name" required>
       <label for="am-email">Email</label>
@@ -2564,11 +2567,11 @@
           form.reset();
           setTimeout(close, 2200);
         } else {
-          status.textContent = "Something went wrong. Please call 817-860-8989 instead.";
+          status.textContent = "That didn't send. Please call 817-860-8989 or email susy@megamissionmedia.com.";
           status.className = 'form-status error';
         }
       }).catch(function () {
-        status.textContent = "Something went wrong. Please call 817-860-8989 instead.";
+        status.textContent = "That didn't send. Please call 817-860-8989 or email susy@megamissionmedia.com.";
         status.className = 'form-status error';
       });
     });
