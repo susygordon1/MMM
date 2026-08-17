@@ -73,6 +73,26 @@
   .case-link:hover { color: var(--white); border-color: var(--white); }
   @media (max-width: 640px) { .case-section { padding: 68px 6vw; } .case-outcome { padding: 24px 20px; } }
 
+
+  /* ===== INTRO BLURB ===== */
+  .intro-section { padding: 84px 6vw; background: var(--black); border-bottom: 1px solid var(--border); }
+  .intro-inner { max-width: 900px; margin: 0 auto; text-align: center; }
+  .intro-eyebrow {
+    font-family: 'Orbitron', sans-serif; font-size: .72rem; letter-spacing: .22em;
+    text-transform: uppercase; color: var(--teal) !important; margin: 0 0 16px !important;
+  }
+  .intro-head {
+    font-family: 'Orbitron', sans-serif; font-weight: 900;
+    font-size: clamp(1.9rem, 3.6vw, 3rem); line-height: 1.08;
+    color: var(--white) !important; margin: 0 0 22px !important;
+  }
+  .intro-head span { color: var(--teal); }
+  .intro-body {
+    color: var(--gray) !important; font-size: 1.06rem; line-height: 1.75;
+    max-width: 68ch; margin: 0 auto !important;
+  }
+  @media (max-width: 640px) { .intro-section { padding: 60px 6vw; } }
+
 </style>
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -2250,75 +2270,65 @@
 </div>
 
 
-<section class="roadmap-section light" id="roadmap">
-  <div class="roadmap-inner">
-    <p class="category-eyebrow" style="color:var(--gold);">The Digital Growth Roadmap</p>
-    <h2 class="block-title roadmap-lead" style="font-family:'Orbitron',sans-serif; font-style:normal; color:var(--white); margin-bottom:8px;">Three Phases. Two Lanes. One Mission.</h2>
-    <p class="category-sub" style="margin-bottom:0;">We don't just build websites. We build digital businesses. Every successful business begins with a strong foundation, grows through consistent optimization, and becomes an authority through intentional strategy.</p>
-
-    <div class="roadmap-flow">
-      <span class="roadmap-flow-step">FOUNDATION</span>
-      <span class="roadmap-flow-arrow">→</span>
-      <span class="roadmap-flow-step">GROWTH</span>
-      <span class="roadmap-flow-arrow">→</span>
-      <span class="roadmap-flow-step">AUTHORITY</span>
-    </div>
-
-    <div class="roadmap-grid">
-
-      <div class="roadmap-card">
-        <p class="roadmap-phase-label">Phase 1</p>
-        <h3>Foundation</h3>
-        <p class="roadmap-card-tagline">Build the Brand</p>
-        <p class="roadmap-card-desc">Before anything gets built, we settle who you are, who you serve, and how you sound. Everything else hangs off this.</p>
-        <ul class="roadmap-includes">
-          <li>Brand identity and positioning</li>
-          <li>Logo and visual direction</li>
-          <li>Messaging and voice</li>
-          <li>Print and business collateral</li>
-        </ul>
-        <span class="copilot-badge">✦ Digital Co-Pilot</span>
-        <a href="#" class="roadmap-cta" data-open-modal>Free Assessment · No Obligation</a>
-      </div>
-
-      <div class="roadmap-card">
-        <p class="roadmap-phase-label">Phase 2</p>
-        <h3>Growth</h3>
-        <p class="roadmap-card-tagline">Build the House</p>
-        <p class="roadmap-card-desc">Your digital house — every room your customers walk through, plus the systems that catch them when they knock.</p>
-        <ul class="roadmap-includes">
-          <li class="includes-plus">Everything in Foundation, plus:</li>
-          <li>Websites and landing pages</li>
-          <li>Website messaging and copy</li>
-          <li>Scheduling and intake systems</li>
-          <li>Back-office and operations support</li>
-        </ul>
-        <span class="copilot-badge">✦ Digital Co-Pilot</span>
-        <a href="#" class="roadmap-cta" data-open-modal>Free Assessment · No Obligation</a>
-      </div>
-
-      <div class="roadmap-card authority">
-        <p class="roadmap-phase-label">Phase 3</p>
-        <h3>Authority</h3>
-        <p class="roadmap-card-tagline">Fill the House</p>
-        <p class="roadmap-card-desc">The house is built. Now we drive people to it — and give them something worth watching when they get there.</p>
-        <ul class="roadmap-includes">
-          <li class="includes-plus">Everything in Growth, plus:</li>
-          <li>Video production, in person or AI</li>
-          <li>Podcasting and audio</li>
-          <li><strong>Ride &amp; Share</strong> interview features</li>
-          <li>Custom jingles and sonic branding</li>
-          <li>Flyers and campaign graphics</li>
-        </ul>
-        <span class="copilot-badge">✦ Digital Co-Pilot</span>
-        <a href="#" class="roadmap-cta" data-open-modal>Free Assessment · No Obligation</a>
-      </div>
-
-    </div>
+<section class="intro-section">
+  <div class="intro-inner">
+    <p class="intro-eyebrow">Mega Mission Media</p>
+    <h2 class="intro-head">Your vision. <span>Our mission.</span></h2>
+    <p class="intro-body">We're a faith-driven media company in Fort Worth building the whole digital house for small business owners &mdash; the brand, the website, the video, and the systems that keep it standing. Most owners get handed a template and nothing else. We start earlier and stay longer.</p>
   </div>
 </section>
 
+<section class="case-section">
+  <div class="case-inner">
+    <p class="block-eyebrow" style="color:var(--teal);">Case Study</p>
+    <h2 class="block-title" style="margin-bottom:14px;">One Client. The Whole House.</h2>
+    <p class="case-lead">Yoel Zehaie came to us for a website. He left with a brand, a film library, and commercials running in two languages. This is what the full build looks like.</p>
 
+    <div class="case-grid">
+      <a class="case-card" href="https://youtu.be/_tWQ5h-sYhw" target="_blank" rel="noopener">
+        <div class="case-thumb">
+          <img src="https://img.youtube.com/vi/_tWQ5h-sYhw/hqdefault.jpg" alt="On-site mini pod reel for Call Yoel Now" loading="lazy">
+          <span class="case-play"><span></span></span>
+        </div>
+        <p class="case-name">Mini Pod Reel</p>
+        <p class="case-role">On-location production</p>
+      </a>
+
+      <a class="case-card" href="https://youtu.be/8P6-LrKRfcw" target="_blank" rel="noopener">
+        <div class="case-thumb">
+          <img src="https://img.youtube.com/vi/8P6-LrKRfcw/hqdefault.jpg" alt="AI commercial spot in English for Call Yoel Now" loading="lazy">
+          <span class="case-play"><span></span></span>
+        </div>
+        <p class="case-name">AI Spot &mdash; English</p>
+        <p class="case-role">Commercial production</p>
+      </a>
+
+      <a class="case-card" href="https://youtu.be/HBcUyfrrTCY" target="_blank" rel="noopener">
+        <div class="case-thumb">
+          <img src="https://img.youtube.com/vi/HBcUyfrrTCY/hqdefault.jpg" alt="AI commercial spot in Spanish for Call Yoel Now" loading="lazy">
+          <span class="case-play"><span></span></span>
+        </div>
+        <p class="case-name">AI Spot &mdash; Espa&ntilde;ol</p>
+        <p class="case-role">Bilingual production</p>
+      </a>
+
+      <a class="case-card" href="https://youtu.be/iUCYARj7i9U" target="_blank" rel="noopener">
+        <div class="case-thumb">
+          <img src="https://img.youtube.com/vi/iUCYARj7i9U/hqdefault.jpg" alt="Ride and Share interview with Yoel Zehaie" loading="lazy">
+          <span class="case-play"><span></span></span>
+        </div>
+        <p class="case-name">Ride &amp; Share</p>
+        <p class="case-role">Founder interview</p>
+      </a>
+    </div>
+
+    <div class="case-outcome">
+      <p class="case-quote">"I have been a client with mega missions, and they are the best marketers I know!!! Since I signed with them my business profit has increased by 3 to 4 times."</p>
+      <p class="case-attr">Yoel Zehaie &nbsp;·&nbsp; <span>Call Yoel Now</span></p>
+      <a class="case-link" href="https://callyoelnow.com" target="_blank" rel="noopener">Visit callyoelnow.com &rarr;</a>
+    </div>
+  </div>
+</section>
 
 <section class="mini-portfolio-section" id="portfolio">
   <div class="mini-portfolio-inner">
@@ -2376,83 +2386,6 @@
   </div>
 </section>
 
-
-<section class="story-section">
-  <div class="story-inner">
-    <div class="story-copy">
-      <p class="category-eyebrow" style="color:var(--teal);">Founder &amp; CEO &nbsp;·&nbsp; Fort Worth, TX</p>
-      <h2 class="block-title" style="font-family:'Orbitron',sans-serif; font-style:normal; color:var(--white);">Meet <span style="color:var(--teal);">The Owner</span></h2>
-      <p>Hey, I'm <strong>Susy Gordon</strong>. I came up in broadcast &mdash; master control for television and radio at <strong>Univision, CBS 11, and Radio Intelligence.</strong> I sat in the room where the signal either went out clean or didn't go out at all.</p>
-      <p>Then twenty-five years in corporate technology &mdash; business analyst, project manager, scrum master, agile coach, and eventually Director of Strategy and Delivery. My job was taking a plan nobody could execute and turning it into something that actually shipped.</p>
-      <p>In June 2025 I left to do this full time. The first interviews were recorded from the front seat of my Kia Sportage, because that's what I had. <strong>Built in a car. Born in obedience.</strong></p>
-      <p>That's what you're hiring. Not a template shop &mdash; broadcast instincts, delivery discipline, and marketing that was learned on real airwaves before it was ever sold as a service.</p>
-      <div class="story-marks">
-        <span class="story-mark">Univision</span>
-        <span class="story-mark">CBS 11</span>
-        <span class="story-mark">Radio Intelligence</span>
-        <span class="story-mark">25+ Years Corporate</span>
-      </div>
-    </div>
-    <div class="story-visual">
-      <img src="susy-story.jpg" alt="Susy Gordon, Founder and CEO of Mega Mission Media" loading="lazy">
-      <p class="story-quote">"Being confident of this, that he who began a good work in you will carry it on to completion." &mdash; Philippians 1:6</p>
-    </div>
-  </div>
-</section>
-
-
-<section class="case-section">
-  <div class="case-inner">
-    <p class="block-eyebrow" style="color:var(--teal);">Case Study</p>
-    <h2 class="block-title" style="margin-bottom:14px;">One Client. The Whole House.</h2>
-    <p class="case-lead">Yoel Zehaie came to us for a website. He left with a brand, a film library, and commercials running in two languages. This is what the full build looks like.</p>
-
-    <div class="case-grid">
-      <a class="case-card" href="https://youtu.be/_tWQ5h-sYhw" target="_blank" rel="noopener">
-        <div class="case-thumb">
-          <img src="https://img.youtube.com/vi/_tWQ5h-sYhw/hqdefault.jpg" alt="On-site mini pod reel for Call Yoel Now" loading="lazy">
-          <span class="case-play"><span></span></span>
-        </div>
-        <p class="case-name">Mini Pod Reel</p>
-        <p class="case-role">On-location production</p>
-      </a>
-
-      <a class="case-card" href="https://youtu.be/8P6-LrKRfcw" target="_blank" rel="noopener">
-        <div class="case-thumb">
-          <img src="https://img.youtube.com/vi/8P6-LrKRfcw/hqdefault.jpg" alt="AI commercial spot in English for Call Yoel Now" loading="lazy">
-          <span class="case-play"><span></span></span>
-        </div>
-        <p class="case-name">AI Spot &mdash; English</p>
-        <p class="case-role">Commercial production</p>
-      </a>
-
-      <a class="case-card" href="https://youtu.be/HBcUyfrrTCY" target="_blank" rel="noopener">
-        <div class="case-thumb">
-          <img src="https://img.youtube.com/vi/HBcUyfrrTCY/hqdefault.jpg" alt="AI commercial spot in Spanish for Call Yoel Now" loading="lazy">
-          <span class="case-play"><span></span></span>
-        </div>
-        <p class="case-name">AI Spot &mdash; Espa&ntilde;ol</p>
-        <p class="case-role">Bilingual production</p>
-      </a>
-
-      <a class="case-card" href="https://youtu.be/iUCYARj7i9U" target="_blank" rel="noopener">
-        <div class="case-thumb">
-          <img src="https://img.youtube.com/vi/iUCYARj7i9U/hqdefault.jpg" alt="Ride and Share interview with Yoel Zehaie" loading="lazy">
-          <span class="case-play"><span></span></span>
-        </div>
-        <p class="case-name">Ride &amp; Share</p>
-        <p class="case-role">Founder interview</p>
-      </a>
-    </div>
-
-    <div class="case-outcome">
-      <p class="case-quote">"I have been a client with mega missions, and they are the best marketers I know!!! Since I signed with them my business profit has increased by 3 to 4 times."</p>
-      <p class="case-attr">Yoel Zehaie &nbsp;·&nbsp; <span>Call Yoel Now</span></p>
-      <a class="case-link" href="https://callyoelnow.com" target="_blank" rel="noopener">Visit callyoelnow.com &rarr;</a>
-    </div>
-  </div>
-</section>
-
 <section class="videos-section light">
   <div class="videos-inner">
     <p class="block-eyebrow" style="color:var(--teal-deep); text-align:center;">Ride &amp; Share</p>
@@ -2503,6 +2436,29 @@
           <p class="video-role">Mega Mission Media</p>
         </div>
       </a>
+    </div>
+  </div>
+</section>
+
+<section class="story-section">
+  <div class="story-inner">
+    <div class="story-copy">
+      <p class="category-eyebrow" style="color:var(--teal);">Founder &amp; CEO &nbsp;·&nbsp; Fort Worth, TX</p>
+      <h2 class="block-title" style="font-family:'Orbitron',sans-serif; font-style:normal; color:var(--white);">Meet <span style="color:var(--teal);">The Owner</span></h2>
+      <p>Hey, I'm <strong>Susy Gordon</strong>. I came up in broadcast &mdash; master control for television and radio at <strong>Univision, CBS 11, and Radio Intelligence.</strong> I sat in the room where the signal either went out clean or didn't go out at all.</p>
+      <p>Then twenty-five years in corporate technology &mdash; business analyst, project manager, scrum master, agile coach, and eventually Director of Strategy and Delivery. My job was taking a plan nobody could execute and turning it into something that actually shipped.</p>
+      <p>In June 2025 I left to do this full time. The first interviews were recorded from the front seat of my Kia Sportage, because that's what I had. <strong>Built in a car. Born in obedience.</strong></p>
+      <p>That's what you're hiring. Not a template shop &mdash; broadcast instincts, delivery discipline, and marketing that was learned on real airwaves before it was ever sold as a service.</p>
+      <div class="story-marks">
+        <span class="story-mark">Univision</span>
+        <span class="story-mark">CBS 11</span>
+        <span class="story-mark">Radio Intelligence</span>
+        <span class="story-mark">25+ Years Corporate</span>
+      </div>
+    </div>
+    <div class="story-visual">
+      <img src="susy-story.jpg" alt="Susy Gordon, Founder and CEO of Mega Mission Media" loading="lazy">
+      <p class="story-quote">"Being confident of this, that he who began a good work in you will carry it on to completion." &mdash; Philippians 1:6</p>
     </div>
   </div>
 </section>
@@ -2575,16 +2531,71 @@
   </div>
 </section>
 
-<section class="booking-section light">
-  <div class="booking-card">
-    <div class="booking-icon">
-      <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 11h18"/></svg>
+<section class="roadmap-section light" id="roadmap">
+  <div class="roadmap-inner">
+    <p class="category-eyebrow" style="color:var(--gold);">The Digital Growth Roadmap</p>
+    <h2 class="block-title roadmap-lead" style="font-family:'Orbitron',sans-serif; font-style:normal; color:var(--white); margin-bottom:8px;">Three Phases. Two Lanes. One Mission.</h2>
+    <p class="category-sub" style="margin-bottom:0;">We don't just build websites. We build digital businesses. Every successful business begins with a strong foundation, grows through consistent optimization, and becomes an authority through intentional strategy.</p>
+
+    <div class="roadmap-flow">
+      <span class="roadmap-flow-step">FOUNDATION</span>
+      <span class="roadmap-flow-arrow">→</span>
+      <span class="roadmap-flow-step">GROWTH</span>
+      <span class="roadmap-flow-arrow">→</span>
+      <span class="roadmap-flow-step">AUTHORITY</span>
     </div>
-    <div class="booking-copy">
-      <h3>Schedule a Free Assessment</h3>
-      <p>Thirty minutes. No pitch, no pressure. We'll look at your digital house together &mdash; what's built, what's missing, and what's next.</p>
+
+    <div class="roadmap-grid">
+
+      <div class="roadmap-card">
+        <p class="roadmap-phase-label">Phase 1</p>
+        <h3>Foundation</h3>
+        <p class="roadmap-card-tagline">Build the Brand</p>
+        <p class="roadmap-card-desc">Before anything gets built, we settle who you are, who you serve, and how you sound. Everything else hangs off this.</p>
+        <ul class="roadmap-includes">
+          <li>Brand identity and positioning</li>
+          <li>Logo and visual direction</li>
+          <li>Messaging and voice</li>
+          <li>Print and business collateral</li>
+        </ul>
+        <span class="copilot-badge">✦ Digital Co-Pilot</span>
+        <a href="#" class="roadmap-cta" data-open-modal>Free Assessment · No Obligation</a>
+      </div>
+
+      <div class="roadmap-card">
+        <p class="roadmap-phase-label">Phase 2</p>
+        <h3>Growth</h3>
+        <p class="roadmap-card-tagline">Build the House</p>
+        <p class="roadmap-card-desc">Your digital house — every room your customers walk through, plus the systems that catch them when they knock.</p>
+        <ul class="roadmap-includes">
+          <li class="includes-plus">Everything in Foundation, plus:</li>
+          <li>Websites and landing pages</li>
+          <li>Website messaging and copy</li>
+          <li>Scheduling and intake systems</li>
+          <li>Back-office and operations support</li>
+        </ul>
+        <span class="copilot-badge">✦ Digital Co-Pilot</span>
+        <a href="#" class="roadmap-cta" data-open-modal>Free Assessment · No Obligation</a>
+      </div>
+
+      <div class="roadmap-card authority">
+        <p class="roadmap-phase-label">Phase 3</p>
+        <h3>Authority</h3>
+        <p class="roadmap-card-tagline">Fill the House</p>
+        <p class="roadmap-card-desc">The house is built. Now we drive people to it — and give them something worth watching when they get there.</p>
+        <ul class="roadmap-includes">
+          <li class="includes-plus">Everything in Growth, plus:</li>
+          <li>Video production, in person or AI</li>
+          <li>Podcasting and audio</li>
+          <li><strong>Ride &amp; Share</strong> interview features</li>
+          <li>Custom jingles and sonic branding</li>
+          <li>Flyers and campaign graphics</li>
+        </ul>
+        <span class="copilot-badge">✦ Digital Co-Pilot</span>
+        <a href="#" class="roadmap-cta" data-open-modal>Free Assessment · No Obligation</a>
+      </div>
+
     </div>
-    <a class="booking-btn" href="https://calendar.app.google/7EeEp5VeZZvSwdrE6" target="_blank" rel="noopener">Book a Call</a>
   </div>
 </section>
 
@@ -2596,6 +2607,7 @@
     <a class="cta-btn cta-btn-ghost" href="#" data-open-modal>Free Assessment</a>
   </div>
 </section>
+
 <section class="contact-section light" id="contact">
   <div class="contact-inner">
     <p class="block-eyebrow" style="color:var(--teal); text-align:center;">Get In Touch</p>
@@ -2645,6 +2657,25 @@
     <p class="contact-note" style="text-align:center;">Prefer to talk? Call &nbsp;<a href="tel:8178608989" style="color:var(--gold);">817-860-8989</a></p>
   </div>
 </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="footer-simple">
   <div class="footer-socials">
     <a href="https://www.facebook.com/SusyGordon89" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 9h3V6h-3c-2.2 0-4 1.8-4 4v2H8v3h2v7h3v-7h3l1-3h-4v-2c0-.6.4-1 1-1z"/></svg></a>
