@@ -1,47 +1,54 @@
-# Screenshots needed — 6 files
+# Portfolio thumbnails — DONE
 
-The portfolio now uses **v2 filenames only**. No case-sensitivity ambiguity left.
+All eight built and wired in. Nothing outstanding.
 
-## Already built (in the zip)
-- `4tec-hero-v2.png` ✅
-- `9lf-hero-v2.png` ✅
-
-## Still needed — send me a screenshot of each
-
-| Site | URL |
+| File | Site |
 |---|---|
-| Call Yoel Now | callyoelnow.com |
-| Maverick Cleanouts | maverickcleanouts.com |
-| Lone Star Pole Supply | lone-star-pole.vercel.app |
-| Texas Southern | tscs-topaz.vercel.app |
-| Paint Pros DFW | ppdfw.vercel.app |
-| Waymaker Utility Solutions | waymaker-ten.vercel.app |
+| `yoel-hero-v2.png` | Call Yoel Now |
+| `9lf-hero-v2.png` | 9-Line Financial |
+| `4tec-hero-v2.png` | 4Tec Electric |
+| `maverick-hero-v2.png` | Maverick Cleanouts |
+| `lonestar-hero-v2.png` | Lone Star Pole Supply |
+| `texassouthern-hero-v2.png` | Texas Southern |
+| `paintpros-hero-v2.png` | Paint Pros DFW |
+| `waymaker-hero-v2.png` | Waymaker Utility Solutions |
 
-### How to capture
-- **Desktop browser**, not phone
-- Top of the homepage — nav + hero is enough
-- Crop off browser chrome (address bar, tabs) if you can
-- Roughly 4:3. Don't worry about exact size, I'll crop.
-
-Send all six in one message and I'll build them, name them correctly, and
-hand back the finished set.
-
-### Note on Call Yoel Now
-The only capture I have of his site is from your phone. Cropped to a portfolio
-thumbnail it cuts his face in half. A desktop capture will fix it.
+All 800x600, all v2 naming — no case-sensitivity ambiguity.
 
 ---
 
-## Old filenames — safe to delete from your repo
-- `yoel-website-hero.png`
-- `4tec-website-hero.png`
-- `maverick-hero.png`
-- `lone-star-pole-hero.png`
-- `texas-southern-hero.png`
-- `paintpros-hero.png`
-- `waymaker-hero.png`
+## Why the old ones never worked
+The seven original files (`yoel-website-hero.png`, `4tec-website-hero.png`,
+`maverick-hero.png`, etc.) were **never in your repo**. Not misnamed — absent.
+Your portfolio thumbnails have been broken on the live site the whole time.
+
+---
+
+## DELETE from your repo — nothing references these
+
+- `20260810_HERO_FINAL.png`
 - `9lf-website-hero.png`
 - `MMM_Logo.png`
-- `archivo-*.woff2`, `dm-sans-*.woff2` (from the abandoned v2 build)
+- `archivo-black-latin-400-normal.woff2`
+- `archivo-latin-600-normal.woff2`
+- `archivo-latin-700-normal.woff2`
+- `dm-sans-latin-400-normal.woff2`
+- `dm-sans-latin-500-normal.woff2`
+- `dm-sans-latin-700-normal.woff2`
+- `great-vibes-latin-400-normal.woff2`
+- `susy-desk.jpg`
+- `susy-desk.webp`
+- `susy-hero.png`
+- `susy-hero.webp`
+- `texture-paper.jpg`
 
-Nothing in the current index.html points at any of them.
+Fifteen files of leftovers from builds we abandoned.
+
+---
+
+## Note on the concept builds
+Lone Star, Texas Southern, and Paint Pros all use **555-555-5555** placeholders,
+and Paint Pros carries a DEMO ribbon. That's honest and correct.
+
+**Maverick Cleanouts shows 682-484-1335** — your cold-calling number, published
+on a live demo site. Worth swapping for a 555 placeholder to match the others.
