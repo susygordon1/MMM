@@ -143,3 +143,28 @@ your Business Profile. Say the 817 out loud on calls, and forward 682 → 817.
 ## To swap a device screen later
 The mockup is a flat image. Send new screenshots and I'll rebuild it — the
 tablet is the obvious slot for Yoel's site or Tony's desktop view.
+
+---
+
+# Round 4 — Hero bumpers + three clients in the mockup
+
+## Mockup now shows three different clients
+- **Laptop** — 4TEC Electric website
+- **Tablet** — 9-Line Financial
+- **Phone** — Zehaie Law / Call Yoel Now
+
+The 4TEC campaign flyer came out. You were right: it's a flyer, not a website,
+and putting it in a tablet frame implied it was one. It belongs in the portfolio
+as branding work instead.
+
+Three devices, three clients — reads as "this happens repeatedly," not "I built
+one website."
+
+## Hero bumpers
+Nav, top strip, and hero now share one centred 1360px container with 5vw side
+padding. Headline pulls right, devices pull left, dead space in the middle
+closes up. Nothing runs edge-to-edge except the ticker, which should.
+
+## To swap a device later
+Send a new screenshot and say which device. Laptop wants ~4:3 desktop,
+tablet ~4:3 narrower, phone from your actual phone.
