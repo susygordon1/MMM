@@ -201,3 +201,31 @@ Now: "That didn't send. Please call 817-860-8989 or email susy@megamissionmedia.
 Submit both forms once on the live site. Confirm two emails arrive with
 different subject lines. Formspree may ask you to confirm the endpoint the
 first time.
+
+---
+
+# Round 6 — Ticker moved and rebuilt
+
+## Ticker now sits BELOW the hero
+It was above the hero, squeezed between the nav and the headline. Now it closes
+the hero and opens the next block — which is what makes it feel like a divider
+instead of decoration.
+
+## Logo mark embedded in the ticker
+`mmm-mark-ink.png` — a dark version of your waveform mark, since the ticker is
+cyan and the cyan mark would vanish. Sits between each phrase.
+
+## New ticker copy
+Your Vision. Our Mission. · Branding · Digital Presence · Video & Podcasting ·
+Back Office Support · Fort Worth, Texas
+
+"Faith-Based Media Network" is gone. The phrases now name what you sell.
+Easy to edit — they're plain `<span>` tags in the ticker div.
+
+## Fixed: unclosed div
+The `.hero-inner` wrapper added in Round 4 was never closed. Browsers
+auto-corrected it so nothing looked broken, but it was invalid HTML and would
+have caused trouble later. Closed properly now.
+
+## New file
+`mmm-mark-ink.png` goes alongside index.html.
