@@ -14,6 +14,7 @@
 - `texassouthern-hero-v2.png`
 - `paintpros-hero-v2.png`
 - `waymaker-hero-v2.png`
+- `ascension-hero-v2.png`
 
 **Images**
 - `hero-devices.png`
@@ -104,3 +105,4 @@ Forms only work on the live domain. They will fail from a local file.
 - **Broadcast credential band** — scoped, not built
 - **Coaching** — now in your copy but not in any of the three phases
 - **Logo** — still raster; have Cheshire redraw as vector for print
+- **Ascension Assurance** — new Concept Builds tile links to `www.ascensionassurance.com`; site isn't built/live yet, so the link goes nowhere until that domain is up
