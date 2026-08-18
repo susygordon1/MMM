@@ -3110,13 +3110,33 @@
     input.addEventListener('keydown', onKey);
   }
 
+  function addRestartLink(label) {
+    var r = document.createElement('button');
+    r.className = 'mmmchat-restart';
+    r.textContent = label || 'Start a new conversation';
+    r.addEventListener('click', startConversation);
+    body.appendChild(r);
+    body.scrollTop = body.scrollHeight;
+  }
+
   function startConversation() {
     body.innerHTML = '';
     botSay("Hey there! 👋 I'm the Mega Mission Media assistant. Mind if I ask a couple quick questions so we can point you the right direction?", function () {
       addChoices(["Sure, let's go", 'Just looking'], function (choice) {
         addMsg(choice, 'user');
         if (choice === 'Just looking') {
-          botSay("No worries at all — feel free to look around, or scroll down and use the contact form if you'd rather. I'll be here if you change your mind. 👋");
+          botSay("No worries at all! Quick context while you look around — we work in three phases: Foundation (branding), Growth (your website and the systems behind it), and Authority (content that builds your reach). Want me to ask a couple quick questions so I can point you to the right one?", function () {
+            addChoices(['Sure, let’s go', 'Not right now'], function (choice2) {
+              addMsg(choice2, 'user');
+              if (choice2 === 'Not right now') {
+                botSay("No problem at all — feel free to look around, or scroll down and use the contact form if you'd rather. I'll be here if you change your mind. 👋", function () {
+                  addRestartLink('Actually, let’s do this');
+                });
+                return;
+              }
+              askName();
+            });
+          });
           return;
         }
         askName();
@@ -3134,8 +3154,13 @@
   }
 
   function askInterest() {
-    botSay('Nice to meet you, ' + answers.name + '! What are you most interested in?', function () {
-      addChoices(['Website Build', 'Social Media & Profiles', 'Business Consulting', 'Not sure yet'], function (choice) {
+    botSay('Nice to meet you, ' + answers.name + '! Where are you at right now?', function () {
+      addChoices([
+        'Foundation — building my brand',
+        'Growth — need a website & systems',
+        'Authority — ready to grow my reach',
+        'Not sure — help me figure it out'
+      ], function (choice) {
         addMsg(choice, 'user');
         answers.interest = choice;
         askEmail();
@@ -3165,15 +3190,18 @@
     });
   }
 
+  var INTEREST_FOLLOWUP = {
+    'Foundation — building my brand': 'the Foundation phase',
+    'Growth — need a website & systems': 'the Growth phase',
+    'Authority — ready to grow my reach': 'the Authority phase',
+    'Not sure — help me figure it out': 'finding the right fit for you'
+  };
+
   function finish() {
-    botSay('Perfect — thanks ' + answers.name + '! We’ve got everything we need. Someone from our team will reach out about ' + answers.interest.toLowerCase() + ' soon.', function () {
+    var followUp = INTEREST_FOLLOWUP[answers.interest] || 'next steps';
+    botSay('Perfect — thanks ' + answers.name + '! We’ve got everything we need. Someone from our team will reach out about ' + followUp + ' soon.', function () {
       submitLead();
-      var r = document.createElement('button');
-      r.className = 'mmmchat-restart';
-      r.textContent = 'Start a new conversation';
-      r.addEventListener('click', startConversation);
-      body.appendChild(r);
-      body.scrollTop = body.scrollHeight;
+      addRestartLink();
     });
   }
 
